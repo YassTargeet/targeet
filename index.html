@@ -1,13 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <title>Targeet - Plateforme pour Talents et Entreprises</title>
-    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    
-</body>
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <img
+            src="./public/img/target_logo.svg"
+            alt="Logo de Targeet"
+            class="header__logo-image"
+          />
+        </a>
+        <nav class="header__navbar">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about-us" class="header__nav-link">À propos</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#jobs" class="header__nav-link">Offres</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#profiles" class="header__nav-link">Profiles</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contact-us" class="header__nav-link">Nous contacter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section id="about-us" class="about-us">
+        <div class="about-us__container">
+          <div class="about-us__image-container">
+            <img
+              src="about-us-image.jpg"
+              alt="Illustration de la section About Us"
+              class="about-us__image"
+            />
+          </div>
+          <div class="about-us__articles">
+            <article class="about-us__article">
+              <h2 class="about-us__title">Notre histoire</h2>
+              <p class="about-us__text">
+                Découvrez l'origine et les valeurs de Targeet.
+              </p>
+            </article>
+            <article class="about-us__article">
+              <h2 class="about-us__title">Nos valeurs</h2>
+              <p class="about-us__text">
+                Respect, transparence et innovation au cœur de nos actions.
+              </p>
+            </article>
+            <article class="about-us__article">
+              <h2 class="about-us__title">Notre équipe</h2>
+              <p class="about-us__text">
+                Une équipe engagée et passionnée à votre service.
+              </p>
+            </article>
+            <article class="about-us__article">
+              <h2 class="about-us__title">Nos projets</h2>
+              <p class="about-us__text">
+                Découvrez les projets qui façonnent l'avenir avec Targeet.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="jobs" class="jobs">
+        <h2 class="jobs__title">Jobs</h2>
+
+        <div class="jobs__carousel">
+          <button
+            class="jobs__control jobs__control--prev"
+            aria-label="Précédent"
+          >
+            <span class="jobs__control-icon">◀</span>
+          </button>
+
+          <div class="jobs__content">
+            <article class="jobs__item">
+              <h3 class="jobs__item-title">Job Title</h3>
+              <p class="jobs__item-description">
+                Lorem ipsum dolor sit amet consectetur. Massa amet id arcu
+                placerat sagittis velit tempus. Risus maecenas tristique
+                vulputate pretium in amet vitae. Pulvinar nisi sit nunc habitant
+                orci eget tempor ut.
+              </p>
+              <button class="jobs__item-button">Postuler</button>
+            </article>
+          </div>
+
+          <button
+            class="jobs__control jobs__control--next"
+            aria-label="Suivant"
+          >
+            <span class="jobs__control-icon">▶</span>
+          </button>
+        </div>
+      </section>
+      <section id="profiles" class="profiles">
+        <section class="profiles">
+          <h2 class="profiles__title">Technologies Microsoft</h2>
+          <div class="profiles__container">
+            <div class="profiles__item">
+              <img
+                src="azure-logo.png"
+                alt="Microsoft Azure"
+                class="profiles__item-image"
+              />
+              <h3 class="profiles__item-title">Microsoft Azure</h3>
+            </div>
+            <div class="profiles__item">
+              <img
+                src="m365-logo.png"
+                alt="Microsoft 365"
+                class="profiles__item-image"
+              />
+              <h3 class="profiles__item-title">Microsoft 365</h3>
+            </div>
+            <div class="profiles__item">
+              <img
+                src="teams-logo.png"
+                alt="Microsoft Teams"
+                class="profiles__item-image"
+              />
+              <h3 class="profiles__item-title">Microsoft Teams</h3>
+            </div>
+            <div class="profiles__item">
+              <img
+                src="dynamics-logo.png"
+                alt="Dynamics 365"
+                class="profiles__item-image"
+              />
+              <h3 class="profiles__item-title">Dynamics 365</h3>
+            </div>
+            <div class="profiles__item">
+              <img
+                src="power-platform-logo.png"
+                alt="Power Platform"
+                class="profiles__item-image"
+              />
+              <h3 class="profiles__item-title">Power Platform</h3>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__nav">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#about-us" class="footer__nav-link">À propos</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#jobs" class="footer__nav-link">Offres d'emploi</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#profiles" class="footer__nav-link">Technologies</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#contact" class="footer__nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__legal">
+          <h3 class="footer__title">Informations légales</h3>
+          <ul class="footer__legal-list">
+            <li class="footer__legal-item">
+              <a href="#mentions-legales" class="footer__legal-link"
+                >Mentions légales</a
+              >
+            </li>
+            <li class="footer__legal-item">
+              <a href="#politique-confidentialite" class="footer__legal-link"
+                >Politique de confidentialité</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__text">© 2024 Targeet. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------
+    -----       -----
+    ----- Modal -----
+    -----       -----
+    ----------------->
+
+    <!-- Modal pour le formulaire de contact -->
+    <div class="modal modal--hidden" id="contact-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Fermer la modal">
+          &times;
+        </button>
+        <div class="modal__body">
+          <h1 class="modal__title">Contactez-nous</h1>
+          <p class="modal__description">
+            Remplissez le formulaire ci-dessous pour nous contacter ou postuler
+            à une offre.
+          </p>
+          <form
+            class="modal__form"
+            action="[URL_DU_SERVEUR]"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <!-- Prénom -->
+            <div class="modal__field">
+              <label for="firstname" class="modal__label">Prénom *</label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                class="modal__input"
+                placeholder="Votre prénom"
+                required
+              />
+            </div>
+            <!-- Nom -->
+            <div class="modal__field">
+              <label for="lastname" class="modal__label">Nom *</label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                class="modal__input"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <!-- Email -->
+            <div class="modal__field">
+              <label for="email" class="modal__label">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="modal__input"
+                placeholder="Votre email"
+                required
+              />
+            </div>
+            <!-- Message -->
+            <div class="modal__field">
+              <label for="message" class="modal__label">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                class="modal__textarea"
+                placeholder="Votre message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <!-- CV -->
+            <div class="modal__field">
+              <label for="cv" class="modal__label"
+                >Joindre votre CV (PDF, max. 5 Mo)</label
+              >
+              <input
+                type="file"
+                id="cv"
+                name="cv"
+                class="modal__input-file"
+                accept=".pdf"
+              />
+            </div>
+            <!-- Bouton d'envoi -->
+            <button type="submit" class="modal__button">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mentions légales -->
+    <div class="modal modal--hidden" id="legal-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Fermer la modal">
+          &times;
+        </button>
+        <div class="modal__body">
+          <h1 class="modal__title">Mentions Légales</h1>
+          <!-- TODO: mettre la date de mise en production -->
+          <p><strong>Dernière mise à jour :</strong> [Date actuelle]</p>
+
+          <h2 class="modal__section-title">1. Informations générales</h2>
+          <p>
+            Conformément aux dispositions de l'article 6 de la loi n° 2004-575
+            du 21 juin 2004 pour la confiance dans l'économie numérique, il est
+            précisé aux utilisateurs du site <strong>Targeet</strong> l'identité
+            des différents intervenants dans le cadre de sa réalisation et de
+            son suivi.
+          </p>
+          <ul>
+            <li>
+              <!-- TODO: mettre les bonnes informations -->
+              <strong>Propriétaire :</strong> Targeet – [Adresse complète]
+            </li>
+            <li>
+              <!-- TODO: mettre les bonnes informations -->
+              <strong>Responsable de publication :</strong> [Nom du responsable]
+              <!-- TODO: mettre les bonnes informations -->
+              – <a href="mailto:contact@targeet.com">contact@targeet.com</a>
+            </li>
+            <li>
+              <!-- TODO: mettre les bonnes informations -->
+              <strong>Hébergeur :</strong> [Nom de l'hébergeur] – [Adresse
+              complète]
+            </li>
+            <li>
+              <!-- TODO: mettre les bonnes informations -->
+              <strong>Développement :</strong> [Nom de l'équipe ou du
+              développeur]
+            </li>
+          </ul>
+
+          <h2 class="modal__section-title">
+            2. Propriété intellectuelle et contrefaçons
+          </h2>
+          <p>
+            Le propriétaire du site détient les droits de propriété
+            intellectuelle et les droits d'usage sur tous les éléments
+            accessibles sur le site, notamment les textes, images, graphismes,
+            logos, vidéos et icônes.
+          </p>
+          <p>
+            Toute reproduction, représentation, modification, publication ou
+            adaptation de tout ou partie des éléments du site, quel que soit le
+            moyen ou le procédé utilisé, est interdite, sauf autorisation écrite
+            préalable de Targeet.
+          </p>
+
+          <h2 class="modal__section-title">3. Limitations de responsabilité</h2>
+          <p>
+            Targeet ne pourra être tenue responsable des dommages directs et
+            indirects causés au matériel de l'utilisateur lors de l'accès au
+            site <strong>Targeet</strong>.
+          </p>
+          <p>
+            Le site <strong>Targeet</strong> contient des liens hypertextes vers
+            d'autres sites externes. Targeet ne peut garantir le contenu de ces
+            sites tiers et ne pourra être tenue responsable des éventuels
+            dommages liés à leur utilisation.
+          </p>
+
+          <h2 class="modal__section-title">
+            4. Gestion des données personnelles
+          </h2>
+          <p>
+            Les données personnelles collectées via le site sont traitées
+            conformément à notre
+            <a href="#privacy-modal" class="modal__link"
+              >politique de confidentialité</a
+            >.
+          </p>
+
+          <h2 class="modal__section-title">5. Droit applicable</h2>
+          <p>
+            Tout litige en relation avec l'utilisation du site
+            <strong>Targeet</strong> est soumis au droit français. Il est fait
+            attribution exclusive de juridiction aux tribunaux compétents.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Politique de confidentialité -->
+    <div class="modal modal--hidden" id="privacy-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Fermer la modal">
+          &times;
+        </button>
+        <div class="modal__body">
+          <h1 class="modal__title">Politique de Confidentialité</h1>
+          <!-- TODO: mettre la date de mise en production -->
+          <p><strong>Dernière mise à jour :</strong> [Date actuelle]</p>
+
+          <h2 class="modal__section-title">Introduction</h2>
+          <p>
+            La présente politique de confidentialité a pour objectif d'informer
+            les utilisateurs du site
+            <strong>Targeet</strong> sur la manière dont leurs données
+            personnelles sont collectées, utilisées, transmises et conservées.
+          </p>
+
+          <h2 class="modal__section-title">
+            1. Responsable du traitement des données
+          </h2>
+          <p>
+            Le responsable du traitement des données personnelles collectées via
+            ce site est :
+          </p>
+          <ul>
+            <li><strong>Nom :</strong> Targeet</li>
+            <!-- TODO: mettre la bonne adresse -->
+            <li><strong>Adresse :</strong> [Adresse complète]</li>
+            <li>
+              <!-- TODO: mettre le bon mail -->
+              <strong>E-mail :</strong>
+              <a href="mailto:contact@targeet.com">contact@targeet.com</a>
+            </li>
+            <!-- TODO: mettre le bon numéro de téléphone -->
+            <li><strong>Téléphone :</strong> [Numéro de téléphone]</li>
+          </ul>
+
+          <h2 class="modal__section-title">2. Données collectées</h2>
+          <p>
+            Les données personnelles collectées via le formulaire de contact
+            comprennent :
+          </p>
+          <ul>
+            <li>Nom et prénom</li>
+            <li>Adresse e-mail</li>
+            <li>Numéro de téléphone (si fourni)</li>
+            <li>
+              Contenu du message, y compris les informations que vous fournissez
+              volontairement (par exemple, CV, lettre de motivation,
+              qualifications).
+            </li>
+          </ul>
+
+          <h2 class="modal__section-title">
+            3. Utilisation des données collectées
+          </h2>
+          <ul>
+            <li>
+              <strong>Traitement de votre candidature :</strong> Les
+              informations que vous fournissez sont transmises aux entreprises
+              ou recruteurs partenaires.
+            </li>
+            <li>
+              <strong>Réponse à vos demandes :</strong> Nous utilisons vos
+              coordonnées pour vous contacter dans le cadre du processus de
+              recrutement.
+            </li>
+            <li>
+              <strong>Obligations légales :</strong> Conserver les données pour
+              répondre aux obligations légales.
+            </li>
+          </ul>
+
+          <h2 class="modal__section-title">4. Partage des données</h2>
+          <p>
+            Vos données personnelles peuvent être transmises aux entreprises ou
+            recruteurs partenaires pour permettre le traitement de votre
+            candidature. En dehors de ces cas, vos données personnelles ne sont
+            jamais vendues, louées ou partagées avec des tiers.
+          </p>
+
+          <h2 class="modal__section-title">5. Conservation des données</h2>
+          <p>
+            Les données personnelles collectées via le formulaire de contact
+            sont conservées uniquement pour la durée nécessaire, conformément
+            aux finalités pour lesquelles elles ont été collectées et aux
+            exigences légales :
+          </p>
+          <ul>
+            <li>
+              <strong>Durée du processus de recrutement :</strong> Les données
+              sont conservées jusqu'à la finalisation du recrutement ou de la
+              mission.
+            </li>
+            <li>
+              <strong>Durée légale supplémentaire :</strong> Les données peuvent
+              être conservées pendant une période de [Durée légale, ex. 1 à 2
+              ans].
+            </li>
+          </ul>
+
+          <h2 class="modal__section-title">6. Vos droits</h2>
+          <p>
+            Conformément au RGPD et à la législation française, vous disposez
+            des droits suivants :
+          </p>
+          <ul>
+            <li>
+              <strong>Droit d'accès :</strong> Obtenir une copie des données
+              personnelles que nous détenons.
+            </li>
+            <li>
+              <strong>Droit de rectification :</strong> Demander la correction
+              de vos données si elles sont inexactes.
+            </li>
+            <li>
+              <strong>Droit d'effacement :</strong> Demander la suppression de
+              vos données personnelles, sauf si leur conservation est
+              nécessaire.
+            </li>
+            <li>
+              <strong>Droit d'opposition :</strong> Vous opposer au traitement
+              de vos données personnelles.
+            </li>
+            <li>
+              <strong>Droit à la portabilité :</strong> Recevoir vos données
+              personnelles dans un format structuré.
+            </li>
+          </ul>
+
+          <h2 class="modal__section-title">7. Sécurité des données</h2>
+          <p>
+            Nous mettons en œuvre des mesures techniques et organisationnelles
+            appropriées pour protéger vos données personnelles contre tout accès
+            non autorisé, perte, destruction ou altération.
+          </p>
+
+          <h2 class="modal__section-title">
+            8. Modifications de la politique de confidentialité
+          </h2>
+          <p>
+            Cette politique de confidentialité peut être mise à jour à tout
+            moment pour refléter des changements législatifs ou des évolutions
+            de notre activité. Nous vous encourageons à consulter cette page
+            régulièrement.
+          </p>
+
+          <h2 class="modal__section-title">9. Contact</h2>
+          <p>
+            Pour toute question ou demande concernant vos données personnelles,
+            veuillez nous contacter à :
+          </p>
+          <ul>
+            <li>
+              <!-- TODO: mettre le bon mail -->
+              <strong>E-mail :</strong>
+              <a href="mailto:contact@targeet.com">contact@targeet.com</a>
+            </li>
+            <li>
+              <!-- TODO: mettre la bonne adresse -->
+              <strong>Adresse :</strong> [Adresse postale de l'entreprise]
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
