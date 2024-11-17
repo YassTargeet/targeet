@@ -144,6 +144,6 @@ Ce projet utilise la méthodologie **BEM** (*Block, Element, Modifier*) pour ass
 
 ---
 # <u>**Auteurs:**</u>
-Tristan THOUVENOT
-novembre 2024
+Tristan THOUVENOT  
+novembre 2024  
 Étudiant développeur chez Metz Numeric School. Passionné par le développement front-end et back-end.
