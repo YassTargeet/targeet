@@ -209,10 +209,14 @@ h6 {
         }
     }
 
+    // TODO: à surveiller une fois la tagline définitive
     &__tagline{
+        width: 80%;
+        max-width: 1440px;
         position: absolute;
-        top: 30%;
-        left: 10%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__title{
