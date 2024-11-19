@@ -110,7 +110,7 @@ h6 {
     margin-bottom: 8rem;
     top: 0;
     position: relative;
-    
+
     &__container {
         position: sticky;
         max-width: 1440px;
@@ -128,7 +128,7 @@ h6 {
         justify-content: center;
         align-items: center;
 
-        & img{
+        & img {
             height: 100%;
             width: 100%;
             // TODO: posez la question sur les couleurs
@@ -210,7 +210,7 @@ h6 {
     }
 
     // TODO: à surveiller une fois la tagline définitive
-    &__tagline{
+    &__tagline {
         width: 80%;
         max-width: 1440px;
         position: absolute;
@@ -219,10 +219,102 @@ h6 {
         transform: translate(-50%, -50%);
     }
 
-    &__title{
+    &__title {
         color: $background-color;
         font-family: $cursive-font;
         font-size: 4rem;
         font-weight: 300;
+    }
+}
+
+/*******************
+***              ***
+***   About us   ***
+***              ***
+********************/
+
+.about-us__image-container {
+    position: relative;
+    height: 800px;
+    width: 800px;
+}
+
+.circle img,
+.loupe img,
+.guy img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    top: 200px;
+    left: 200px;
+    border: solid 1px red; /* Pour vérifier la position */
+}
+
+.circle img {
+    transform: translate(-50%, -50%) scale(0);
+    animation: bounceIn 1.5s ease-in-out 1s forwards;
+}
+
+.loupe img {
+    top: 213px;
+    left: 217px;
+    transform: translate(-50%, -50%) scale(0); /* Ajout du centrage */
+    animation: loupe-rotate 2s ease-in-out 0.5s forwards;
+}
+
+.guy img {
+    top: 200px;
+    left: 206px;
+    transform: translate(-50%, -50%) scale(0); /* Ajout du centrage */
+    animation: bounceIn 1.8s ease-in-out 2.5s forwards;
+}
+
+/* Animations */
+@keyframes loupe-rotate {
+    0% {
+        transform: translate(-50%, -50%) scale(0) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    }
+}
+
+@keyframes bounceIn {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: translate(-50%, -50%) scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: translate(-50%, -50%) scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: translate(-50%, -50%) scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: translate(-50%, -50%) scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: translate(-50%, -50%) scale3d(0.97, 0.97, 0.97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
     }
 }
