@@ -22,7 +22,7 @@
     &__item {
         &--1 {
             grid-area: 1 / 1 / 2 / 3;
-            background-color: variables.$primary-color; /* Couleur primaire */
+            background-color: #007bff; /* Couleur primaire */
         }
 
         &--2 {
@@ -37,17 +37,17 @@
 
         &--4 {
             grid-area: 4 / 2 / 5 / 5;
-            background-color: variables.$font-color; /* Couleur neutre (définie dans variables) */
+            background-color: gray; /* Couleur neutre (définie dans variables) */
         }
 
         &--5 {
             grid-area: 2 / 4 / 4 / 5;
-            background-color: variables.$secondary-color; /* Couleur secondaire ou autre couleur définie */
+            background-color: purple; /* Couleur secondaire ou autre couleur définie */
         }
 
         &--6 {
             grid-area: 2 / 2 / 4 / 4;
-            background-color: variables.$warning-color; /* Couleur d'erreur */
+            background-color: red; /* Couleur d'erreur */
         }
     }
 }
