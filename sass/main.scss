@@ -80,6 +80,17 @@ $warning-color: #ffc107;
 ***            ***
 ******************/
 
+@mixin flexbox($direction: row wrap, $justify: null, $align: stretch, $gap: null) {
+    display: flex;
+    flex-flow: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $gap != null {
+        gap: $gap;
+    }
+}
+
 /********************
 ***               ***
 ***   Fonctions   ***
@@ -112,21 +123,12 @@ h6 {
 ***   Header   ***
 ***            ***
 ******************/
-
-.sticky_wrapper{
-    position: relative;
-    z-index: 10;
-}
-
 .header {
-
     &__container {
         position: sticky;
         top: 0;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row, space-between, center);
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.25);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -139,9 +141,7 @@ h6 {
     &__logo {
         height: 100%;
         width: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(row, center, center);
 
         & img {
             height: 100%;
@@ -156,11 +156,8 @@ h6 {
     }
 
     &__nav-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row, space-between, center);
         list-style: none;
-        flex-direction: row;
     }
 
     &__nav-link {
@@ -168,7 +165,7 @@ h6 {
         padding: 10px 0;
         display: inline-block;
         overflow: hidden;
-        color:color.adjust($primary-color, $lightness: 10%); /* Couleur du lien */
+        color: color.adjust($primary-color, $lightness: 10%); /* Couleur du lien */
         // color:$primary-color; /* Couleur du lien */
         font-size: 1.2rem;
         text-decoration: none;
@@ -195,13 +192,13 @@ h6 {
             transform: translateX(-100%);
             opacity: 0;
         }
-        
+
         &::after {
             top: 0;
             opacity: 0;
             transform: translateX(100%);
         }
-        
+
         &:hover::before,
         &:hover::after {
             opacity: 1;
@@ -209,7 +206,7 @@ h6 {
         }
     }
 
-    &__wrapper{
+    &__wrapper {
         position: static;
         top: 0;
         width: 100%;
@@ -276,7 +273,6 @@ h6 {
         height: 1200px;
         width: 100%;
         z-index: 4;
-        // display: none; // TODO: virer
 
         &::after {
             content: "";
@@ -378,8 +374,6 @@ h6 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
         gap: 0 5rem;
     }
 
@@ -556,9 +550,7 @@ h6 {
             height: 100%;
             width: 100%;
             background-color: color.adjust($primary-color, $lightness: 40%);
-            display: flex;
-            justify-content: space-evenly;
-            flex-flow: column;
+            @include flexbox(column, space-evenly, flex-start);
             opacity: 0;
             animation: content-top-expand 0.8s ease-in-out 4.6s forwards;
             overflow: hidden;
@@ -575,9 +567,7 @@ h6 {
             height: 100%;
             width: 100%;
             background-color: color.adjust(red, $lightness: 40%);
-            display: flex;
-            justify-content: space-evenly;
-            flex-flow: column;
+            @include flexbox(column, space-evenly);
             opacity: 0;
             animation: content-top-expand 0.8s ease-in-out 7.8s forwards;
             overflow: hidden;
@@ -595,9 +585,7 @@ h6 {
             height: 100%;
             width: 100%;
             background-color: color.adjust(#f9bc16, $lightness: 40%);
-            display: flex;
-            justify-content: space-evenly;
-            flex-flow: column;
+            @include flexbox(column, space-evenly, flex-start);
             transform: translate(-100%, -100%);
             position: absolute;
             top: 100%;
@@ -618,9 +606,7 @@ h6 {
             height: 100%;
             width: 100%;
             background-color: color.adjust(#83c440, $lightness: 40%);
-            display: flex;
-            justify-content: space-evenly;
-            flex-flow: column;
+            @include flexbox(column, space-evenly);
             opacity: 0;
             transform: translate(-100%, -100%);
             position: absolute;
@@ -686,9 +672,7 @@ h6 {
     margin: auto;
     z-index: 1;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, center);
     margin-bottom: 8rem;
 
     &__carousel {
@@ -723,10 +707,7 @@ h6 {
     &__container {
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+        @include flexbox(row nowrap, center, center, 2rem);
         overflow: hidden;
     }
 
@@ -735,10 +716,7 @@ h6 {
         width: 80%;
         padding: 2rem;
         background-color: $background-color;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: start;
+        @include flexbox(column, space-between, flex-start);
         border-radius: 5px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
@@ -752,20 +730,13 @@ h6 {
         width: 10%;
         margin-left: 1rem;
         margin-bottom: 1rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4rem;
+        @include flexbox(column, center, center, 0.4rem);
         font-size: 0.8rem;
     }
 
     &__salary {
         width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row nowrap, space-between, center);
 
         & i {
             display: block;
@@ -776,9 +747,7 @@ h6 {
 
     &__duration {
         width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
+        @include flexbox(row nowrap, space-between, center);
 
         & i {
             display: block;
@@ -789,9 +758,7 @@ h6 {
 
     &__place {
         width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
+        @include flexbox(row nowrap, space-between, center);
 
         & i {
             display: block;
@@ -813,11 +780,7 @@ h6 {
         height: 10%;
         width: fit-content;
         padding: 0.5rem;
-        display: flex;
-        flex-flow: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
+        @include flexbox(row nowrap, flex-start, center, 1rem);
         margin-bottom: 1rem;
 
         & i {
@@ -940,16 +903,12 @@ h6 {
     }
 
     &__nav-list {
-        display: flex;
-        flex-flow: column;
-        gap: 1rem;
+        @include flexbox(column nowrap, flex-start, flex-start, 1rem);
         margin-top: 1.8rem;
     }
 
     &__legal-list {
-        display: flex;
-        flex-flow: column;
-        gap: 1rem;
+        @include flexbox(column nowrap, flex-start, flex-start, 1rem);
         margin-top: 1.8rem;
     }
 }
@@ -966,9 +925,7 @@ h6 {
     // position: fixed;
     top: 0;
     left: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, center);
     background-color: rgba(0, 0, 0, 0.6);
     // z-index: 1000;
     // visibility: hidden;
@@ -1038,15 +995,11 @@ h6 {
     }
 
     &__form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        @include flexbox(column, flex-start, stretch, 1.5rem);
     }
 
     &__field {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        @include flexbox(column, flex-start, stretch, 0.5rem);
         text-align: left;
 
         & label {
@@ -1109,9 +1062,7 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, center);
     // visibility: hidden; /* Caché par défaut */
     // opacity: 0;
     // z-index: 1000;
@@ -1234,9 +1185,7 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, center);
     // visibility: hidden; /* Cachée par défaut */
     // opacity: 0;
     // z-index: 1000;
@@ -1372,9 +1321,7 @@ h6 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
-    display: none;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row, center, center);
     // visibility: hidden;
     // opacity: 0;
     // z-index: 1000;
@@ -1445,8 +1392,7 @@ h6 {
     }
 
     &__info {
-        display: flex;
-        justify-content: space-between;
+        @include flexbox(row, space-between, flex-start);
         font-size: 1rem;
         margin-bottom: 1.5rem;
 
