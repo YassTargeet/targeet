@@ -1,0 +1,53 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+
+/*******************
+***              ***
+***   Profiles   ***
+***              ***
+********************/
+
+.profiles {
+    &__container {
+        height: 600px;
+        max-width: 1440px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 16px;
+        margin-bottom: 8rem;
+    }
+
+    &__item {
+        &--1 {
+            grid-area: 1 / 1 / 2 / 3;
+            background-color: variables.$primary-color; /* Couleur primaire */
+        }
+
+        &--2 {
+            grid-area: 1 / 3 / 2 / 5;
+            background-color: variables.$success-color; /* Couleur de succès */
+        }
+
+        &--3 {
+            grid-area: 2 / 1 / 5 / 2;
+            background-color: variables.$warning-color; /* Couleur d'avertissement */
+        }
+
+        &--4 {
+            grid-area: 4 / 2 / 5 / 5;
+            background-color: variables.$font-color; /* Couleur neutre (définie dans variables) */
+        }
+
+        &--5 {
+            grid-area: 2 / 4 / 4 / 5;
+            background-color: variables.$secondary-color; /* Couleur secondaire ou autre couleur définie */
+        }
+
+        &--6 {
+            grid-area: 2 / 2 / 4 / 4;
+            background-color: variables.$warning-color; /* Couleur d'erreur */
+        }
+    }
+}
