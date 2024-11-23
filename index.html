@@ -20,56 +20,55 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="/">
-                    <img src="./public/img/target_logo.svg" alt="Logo de Targeet" class="header__logo-image">
-                </a>
-            </div>
-            <nav class="header__navbar">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a href="#about-us" class="header__nav-link">À propos</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#jobs" class="header__nav-link">Offres</a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#profiles" class="header__nav-link">
-                            Profiles
-                        </a>
-                    </li>
-                    <li class="header__nav-item">
-                        <a href="#contact-us" class="header__nav-link">
-                            Nous contacter
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header__container">
+        <div class="header__logo">
+            <a href="/">
+                <img src="./public/img/target_logo.svg" alt="Logo de Targeet" class="header__logo-image">
+            </a>
         </div>
-        <div class="header__wrapper">
-            <img src="./public/img/header_illustration.jpg" alt="Illustration d'une femme devant un ordinateur">
-        </div>
-        <div class="header__tagline">
-            <h1 class="header__title">Ciblez vos recrutements Microsoft</h1>
-        </div>
+        <nav class="header__navbar">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#about-us" class="header__nav-link">À propos</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#jobs" class="header__nav-link">Offres</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#profiles" class="header__nav-link">
+                        Profiles
+                    </a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#contact-us" class="header__nav-link">
+                        Nous contacter
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <div class="header__wrapper">
+        <div class="header__content">
+            <img src="./public/img/header_illustration.jpg" alt="Illustration d'une femme devant un ordinateur">
+            <div class="header__tagline">
+                <h1 class="header__title">Ciblez vos recrutements Microsoft</h1>
+            </div>
+        </div>
+    </div>
     <main class="main">
+        
         <section id="about-us" class="about-us">
             <div class="about-us__container">
                 <div class="about-us__image-container">
-                    <!-- Cercle -->
                     <div class="about-us__circle">
                         <img src="./public/img/target_logo_circle.svg" alt="Cercle" />
                     </div>
 
-                    <!-- Loupe -->
                     <div class="about-us__magnifier">
                         <img src="./public/img/target_logo_magnifier.svg" alt="Loupe" />
                     </div>
 
-                    <!-- Bonhomme -->
+                
                     <div class="about-us__guy">
                         <img src="./public/img/target_logo_guy.svg" alt="Bonhomme" />
                     </div>
@@ -775,59 +774,61 @@
         </div>
     </div>
     <div class="jobs-modal jobs-modal--hidden" id="job-detail-modal">
-    <div class="jobs-modal__overlay"></div>
-    <div class="jobs-modal__content">
-        <button class="jobs-modal__close" aria-label="Fermer la modale">
-            &times;
-        </button>
-        <div class="jobs-modal__body">
-            <!-- Titre du job -->
-            <h1 class="jobs-modal__title">Intitulé du Job</h1>
+        <div class="jobs-modal__overlay"></div>
+        <div class="jobs-modal__content">
+            <button class="jobs-modal__close" aria-label="Fermer la modale">
+                &times;
+            </button>
+            <div class="jobs-modal__body">
+                <!-- Titre du job -->
+                <h1 class="jobs-modal__title">Intitulé du Job</h1>
 
-            <!-- Partie salaire, lieu et durée -->
-            <div class="jobs-modal__info">
-                <p class="jobs-modal__salary"><strong>Salaire :</strong> 30k€ / an</p>
-                <p class="jobs-modal__location"><strong>Lieu :</strong> Paris</p>
-                <p class="jobs-modal__duration"><strong>Durée :</strong> CDI</p>
+                <!-- Partie salaire, lieu et durée -->
+                <div class="jobs-modal__info">
+                    <p class="jobs-modal__salary"><strong>Salaire :</strong> 30k€ / an</p>
+                    <p class="jobs-modal__location"><strong>Lieu :</strong> Paris</p>
+                    <p class="jobs-modal__duration"><strong>Durée :</strong> CDI</p>
+                </div>
+
+                <!-- Description de l'entreprise -->
+                <div class="jobs-modal__section">
+                    <h2 class="jobs-modal__section-title">Description de l'entreprise</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget eros at neque dictum viverra.
+                    </p>
+                </div>
+
+                <!-- Description du poste -->
+                <div class="jobs-modal__section">
+                    <h2 class="jobs-modal__section-title">Description du poste</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lorem et justo bibendum
+                        sodales.</p>
+                </div>
+
+                <!-- Missions -->
+                <div class="jobs-modal__section">
+                    <h2 class="jobs-modal__section-title">Missions</h2>
+                    <ul class="jobs-modal__list">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Quisque ac lorem et justo bibendum sodales.</li>
+                        <li>Nullam id elit eu nisi euismod faucibus vel vitae arcu.</li>
+                    </ul>
+                </div>
+
+                <!-- Profil recherché -->
+                <div class="jobs-modal__section">
+                    <h2 class="jobs-modal__section-title">Profil recherché</h2>
+                    <ul class="jobs-modal__list">
+                        <li>Expérience : 2-3 ans dans un poste similaire.</li>
+                        <li>Compétences : Lorem ipsum dolor sit amet.</li>
+                        <li>Langues : Anglais courant.</li>
+                    </ul>
+                </div>
+
+                <!-- Bouton postuler -->
+                <button class="jobs-modal__button">Postuler</button>
             </div>
-
-            <!-- Description de l'entreprise -->
-            <div class="jobs-modal__section">
-                <h2 class="jobs-modal__section-title">Description de l'entreprise</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget eros at neque dictum viverra.</p>
-            </div>
-
-            <!-- Description du poste -->
-            <div class="jobs-modal__section">
-                <h2 class="jobs-modal__section-title">Description du poste</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lorem et justo bibendum sodales.</p>
-            </div>
-
-            <!-- Missions -->
-            <div class="jobs-modal__section">
-                <h2 class="jobs-modal__section-title">Missions</h2>
-                <ul class="jobs-modal__list">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Quisque ac lorem et justo bibendum sodales.</li>
-                    <li>Nullam id elit eu nisi euismod faucibus vel vitae arcu.</li>
-                </ul>
-            </div>
-
-            <!-- Profil recherché -->
-            <div class="jobs-modal__section">
-                <h2 class="jobs-modal__section-title">Profil recherché</h2>
-                <ul class="jobs-modal__list">
-                    <li>Expérience : 2-3 ans dans un poste similaire.</li>
-                    <li>Compétences : Lorem ipsum dolor sit amet.</li>
-                    <li>Langues : Anglais courant.</li>
-                </ul>
-            </div>
-
-            <!-- Bouton postuler -->
-            <button class="jobs-modal__button">Postuler</button>
         </div>
     </div>
-</div>
 
     <!-- TODO: faire la modale des jobs -->
 </body>
