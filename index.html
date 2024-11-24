@@ -359,6 +359,8 @@
                     <button class="profiles__button">Rechercher</button>
                 </div>
             </div>
+
+
         </section>
     </main>
     <footer class="footer">
@@ -792,6 +794,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal présentant le job détaillé -->
     <div class="jobs-modal jobs-modal--hidden" id="job-detail-modal">
         <div class="jobs-modal__overlay"></div>
         <div class="jobs-modal__content">
@@ -835,6 +839,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal présentant le profile détaillé -->
     <div class="profile-modal profile-modal--hidden" id="profile-detail-modal">
         <div class="profile-modal__overlay"></div>
         <div class="profile-modal__content">
@@ -850,16 +856,16 @@
                             <p class="profile-modal__experience-header"><strong>2021-2023</strong> - Nom de l'entreprise
                             </p>
                             <p>Missions effectuées :</p>
-                            <p>- Développement et maintenance d’applications.</p>
+                            <p>- Développement et maintenance d'applications.</p>
                             <p>- Conception de nouvelles fonctionnalités.</p>
-                            <p>- Collaboration avec l’équipe produit pour optimiser l’expérience utilisateur.</p>
+                            <p>- Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur.</p>
                         </div>
                         <div class="profile-modal__experience-item">
                             <p class="profile-modal__experience-header"><strong>2018-2021</strong> - Nom de l'entreprise
                             </p>
                             <p>Missions effectuées :</p>
                             <p>- Gestion de projets techniques.</p>
-                            <p>- Coordination d’équipes pluridisciplinaires.</p>
+                            <p>- Coordination d'équipes pluridisciplinaires.</p>
                             <p>- Mise en place de solutions adaptées aux besoins clients.</p>
                         </div>
                     </div>
@@ -879,9 +885,105 @@
                         <li>- Gestion de projet</li>
                         <li>- Communication efficace</li>
                         <li>- Résolution de problèmes</li>
-                        <li>- Esprit d’équipe</li>
+                        <li>- Esprit d'équipe</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal permettant de voir tous les profiles selon les technos -->
+    <div class="profiles-modal profiles-modal--hidden">
+        <div class="profiles-modal__overlay"></div>
+        <div class="profiles-modal__content">
+            <button class="profiles-modal__close" aria-label="Fermer la modale">&times;</button>
+            <div class="profiles-carousel">
+                <button class="profiles-control profiles-control--prev" aria-label="Précédent">
+                    <span class="profiles-control-icon"><i class="fa-solid fa-chevron-left"></i></span>
+                </button>
+                <div class="profiles-container">
+                    <article class="profiles-item">
+                        <h2 class="profiles-title">Développeur Full Stack</h2>
+                        <div class="profiles-infos">
+                            <div class="profiles-experience">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>3 ans d'expérience</p>
+                            </div>
+                            <div class="profiles-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Metz</p>
+                            </div>
+                            <div class="profiles-availability">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>Disponible immédiatement</p>
+                            </div>
+                        </div>
+                        <div class="profiles-description">
+                            <p class="profiles-description--content">
+                                Passionné par le développement, spécialisé en React.js et Node.js. Capable de
+                                travailler en
+                                équipe et
+                                de mener des projets de bout en bout avec une forte implication dans
+                                l'expérience
+                                utilisateur.
+                            </p>
+                        </div>
+                        <div class="profiles-tag">
+                            <i class="fa-solid fa-tag"></i>
+                            <p class="profiles-tag--skills">JavaScript</p>
+                            <p class="profiles-tag--skills">React</p>
+                            <p class="profiles-tag--skills">Node.js</p>
+                            <p class="profiles-tag--skills">MongoDB</p>
+                            <p class="profiles-tag--skills">TypeScript</p>
+                        </div>
+                        <div class="profiles-cta">
+                            <button class="profiles-button">Voir Profil</button>
+                            <button class="profiles-button">Contacter</button>
+                        </div>
+                    </article>
+                    <article class="profiles-item">
+                        <h2 class="profiles-title">Analyste Data</h2>
+                        <div class="profiles-infos">
+                            <div class="profiles-experience">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>5 ans d'expérience</p>
+                            </div>
+                            <div class="profiles-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Strasbourg</p>
+                            </div>
+                            <div class="profiles-availability">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>Disponible sous 1 mois</p>
+                            </div>
+                        </div>
+                        <div class="profiles-description">
+                            <p class="profiles-description--content">
+                                Expert en analyse de données et reporting. Conception et gestion de tableaux de
+                                bord avec
+                                Power BI
+                                et Tableau. Aptitude à transformer les données brutes en informations
+                                exploitables.
+                            </p>
+                        </div>
+                        <div class="profiles-tag">
+                            <i class="fa-solid fa-tag"></i>
+                            <p class="profiles-tag--skills">SQL</p>
+                            <p class="profiles-tag--skills">Power BI</p>
+                            <p class="profiles-tag--skills">Tableau</p>
+                            <p class="profiles-tag--skills">Python</p>
+                            <p class="profiles-tag--skills">Excel</p>
+                        </div>
+                        <div class="profiles-cta">
+                            <button class="profiles-button">Voir Profil</button>
+                            <button class="profiles-button">Contacter</button>
+                        </div>
+                    </article>
+                    <!-- Ajouter d'autres profils similaires -->
+                </div>
+                <button class="profiles-control profiles-control--next" aria-label="Suivant">
+                    <span class="profiles-control-icon"><i class="fa-solid fa-chevron-right"></i></span>
+                </button>
             </div>
         </div>
     </div>
