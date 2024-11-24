@@ -9,19 +9,47 @@
 ****************/
 
 .jobs {
-    height: 700px;
-    width: 1440px;
+    height: 1200px;
+    width: 100%;
     margin: auto;
     z-index: 1;
     position: relative;
     @include mixins.flexbox(row, center, center);
     margin-bottom: 8rem;
 
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        z-index: -2;
+        height: 100%;
+        width: 100%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content{
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    &__main-title {
+        font-size: 3rem;
+        color: variables.$background-color;
+    }
+
     &__carousel {
-        height: 90%;
+        height: 60%;
         width: 90%;
-        background-color: #17a2b8;
-        position: relative;
+        position: absolute;
+        bottom: 20%;
     }
 
     &__control {
@@ -49,8 +77,10 @@
     &__container {
         height: 100%;
         width: 100%;
+        margin: auto;
         @include mixins.flexbox(row nowrap, center, center, 2rem);
         overflow: hidden;
+       
     }
 
     &__item {
@@ -160,32 +190,32 @@
 *********************/
 
 .jobs-modal {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
     @include mixins.flexbox(row, center, center);
-    // visibility: hidden;
-    // opacity: 0;
-    // z-index: 1000;
-    // transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 
-    // &--hidden {
-    //     visibility: hidden;
-    //     opacity: 0;
-    // }
+    &--hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
 
-    // &__overlay {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: rgba(0, 0, 0, 0.6); /* Overlay transparent */
-    //     z-index: -1;
-    // }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Overlay transparent */
+        z-index: -1;
+    }
 
     &__content {
         background-color: #fff;
@@ -194,14 +224,14 @@
         border-radius: 10px;
         padding: 2rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-        // transform: translateY(-50px); /* Animation d’apparition */
-        // opacity: 0;
-        // transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateY(-50px); /* Animation d’apparition */
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
 
-        // &.show {
-        //     transform: translateY(0);
-        //     opacity: 1;
-        // }
+        &.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     &__close {

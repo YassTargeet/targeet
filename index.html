@@ -17,6 +17,7 @@
         rel="stylesheet">
     <!-- TODO: ajouter la source des images -->
 </head>
+
 <body>
     <header class="header__container">
         <div class="header__logo">
@@ -141,6 +142,12 @@
             </div>
         </section>
         <section id="jobs" class="jobs">
+            <div class="jobs__content">
+                <h2 class="jobs__main-title">Trouvez votre prochaine mission</h2>
+            </div>
+            <div class="jobs__image">
+                <img src="./public/img/microsoft_building.png" alt="">
+            </div>
             <!-- TODO: carousel infini -->
             <div class="jobs__carousel">
                 <button class="jobs__control jobs__control--prev" aria-label="Précédent">
@@ -298,39 +305,59 @@
             </div>
         </section>
         <section id="profiles" class="profiles">
-            <section class="profiles">
-                <h2 class="profiles__title">Technologies Microsoft</h2>
-                <div class="profiles__container">
-                    <div class="profiles__item--1">
-                        <img src="azure-logo.png" alt="Microsoft Azure" class="profiles__item-image">
-                        <h3 class="profiles__item-title">
-                            Dynamics 365
-                        </h3>
+            <h2 class="profiles__title">A la recherche d'un colaborateur?</h2>
+            <div class="profiles__container">
+                <div class="profiles__item--1">
+                    <div class="profiles__image">
+                        <img src="./public/img/dynamics365.jpg" alt="Merci à Clint Patterson sur Unsplash">
                     </div>
-                    <div class="profiles__item--2">
-                        <img src="m365-logo.png" alt="Microsoft 365" class="profiles__item-image">
-                        <h3 class="profiles__item-title">Office 365</h3>
-                    </div>
-                    <div class="profiles__item--3">
-                        <img src="teams-logo.png" alt="Microsoft Teams" class="profiles__item-image">
-                        <h3 class="profiles__item-title">
-                            Power Plateform
-                        </h3>
-                    </div>
-                    <div class="profiles__item--4">
-                        <img src="dynamics-logo.png" alt="Dynamics 365" class="profiles__item-image">
-                        <h3 class="profiles__item-title">.Net</h3>
-                    </div>
-                    <div class="profiles__item--5">
-                        <img src="power-platform-logo.png" alt="Power Platform" class="profiles__item-image">
-                        <h3 class="profiles__item-title">Power BI</h3>
-                    </div>
-                    <div class="profiles__item--6">
-                        <img src="power-platform-logo.png" alt="Power Platform" class="profiles__item-image">
-                        <h3 class="profiles__item-title">Biztalk</h3>
-                    </div>
+                    <h3 class="profiles__item-title">
+                        Dynamics 365
+                    </h3>
+                    <button class="profiles__button">Rechercher</button>
                 </div>
-            </section>
+                <div class="profiles__item--2">
+                    <div class="profiles__image">
+                        <img src="./public/img/office365.jpg" alt="Merci à Glenn Carstens-Peters sur Unsplash"
+                            class="profiles__item-image">
+                    </div>
+                    <h3 class="profiles__item-title">Office 365</h3>
+                    <button class="profiles__button">Rechercher</button>
+                </div>
+                <div class="profiles__item--3">
+                    <div class="profiles__image">
+                        <img src="./public/img/office365.jpg" alt="Merci à Glenn Carstens-Peters sur Unsplash" class="profiles__item-image">
+                    </div>
+                    <h3 class="profiles__item-title">
+                        Power Plateform
+                    </h3>
+                    <button class="profiles__button">Rechercher</button>
+                </div>
+                <div class="profiles__item--4">
+                    <div class="profiles__image">
+                        <img src="./public/img/office365.jpg" alt="Merci à Glenn Carstens-Peters sur Unsplash"
+                            class="profiles__item-image">
+                    </div>
+                    <h3 class="profiles__item-title">.Net</h3>
+                    <button class="profiles__button">Rechercher</button>
+                </div>
+                <div class="profiles__item--5">
+                    <div class="profiles__image">
+                        <img src="./public/img/office365.jpg" alt="Merci à Glenn Carstens-Peters sur Unsplash"
+                            class="profiles__item-image">
+                    </div>
+                    <h3 class="profiles__item-title">Power BI</h3>
+                    <button class="profiles__button">Rechercher</button>
+                </div>
+                <div class="profiles__item--6">
+                    <div class="profiles__image">
+                        <img src="./public/img/office365.jpg" alt="Merci à Glenn Carstens-Peters sur Unsplash"
+                            class="profiles__item-image">
+                    </div>
+                    <h3 class="profiles__item-title">Biztalk</h3>
+                    <button class="profiles__button">Rechercher</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -808,4 +835,5 @@
         </div>
     </div>
 </body>
+
 </html>
