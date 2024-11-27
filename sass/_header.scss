@@ -14,12 +14,16 @@
         top: 0;
         width: 100%;
         @include mixins.flexbox(row, space-between, center); // Utilisation de la mixin flexbox
-        background: rgba(255, 255, 255, 0.25); // Effet de verre dépoli
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.28);
         z-index: 100;
+        transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+        
+        &--background{
+            background: rgba(255, 255, 255, 0.25); // Effet de verre dépoli
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        }
     }
 
     &__logo {

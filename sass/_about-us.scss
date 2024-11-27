@@ -38,6 +38,7 @@
             transform: translate(-50%, -50%) scale(0);
             z-index: -1;
             animation: bounceIn 1.5s ease-in-out 1s forwards;
+            animation-play-state: paused;
         }
     }
 
@@ -54,7 +55,8 @@
 
     &__circle img {
         transform: translate(-50%, -50%) scale(0);
-        animation: bounceIn 0.8s ease-in-out 0.8s forwards;
+        animation: bounceIn 0.8s ease-in-out 100ms forwards;
+        animation-play-state: paused;
     }
 
     &__magnifier img {
@@ -62,6 +64,7 @@
         left: calc(50% + 18px);
         transform: translate(-50%, -50%) scale(0);
         animation: loupe-rotate 1.3s ease-in-out 0.8s forwards;
+        animation-play-state: paused;
     }
 
     &__guy img {
@@ -69,6 +72,7 @@
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
         animation: bounceIn 1.8s ease-in-out 1.6s forwards;
+        animation-play-state: paused;
     }
 
     /*********************/
@@ -145,6 +149,7 @@
             top: calc(50% - 100px);
             right: -100%;
             animation: article-expand 0.5s ease-in-out 2.5s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(2) {
@@ -156,6 +161,7 @@
             left: 0;
             opacity: 0;
             animation: article-expand 0.5s ease-in-out 4.5s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(3) {
@@ -168,6 +174,7 @@
             bottom: calc(-50% + 100px);
             right: -100%;
             animation: article-expand 0.5s ease-in-out 6.5s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(4) {
@@ -179,6 +186,7 @@
             top: calc(0%);
             left: 0%;
             animation: article-expand 0.5s ease-in-out 8.5s forwards;
+            animation-play-state: paused;
         }
 
         /**************************/
@@ -207,6 +215,7 @@
             transform: translate(-50%, -50%) rotate(45deg);
             opacity: 0;
             animation: border-bottom-expand 0.5s ease-in-out 2s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(2) {
@@ -219,6 +228,7 @@
             transform: translate(-50%, -50%) rotate(45deg);
             opacity: 0;
             animation: border-right-expand 0.5s ease-in-out 4s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(3) {
@@ -231,6 +241,7 @@
             transform: translate(-50%, -50%) rotate(45deg);
             opacity: 0;
             animation: border-left-expand 0.5s ease-in-out 6s forwards;
+            animation-play-state: paused;
         }
 
         &:nth-of-type(4) {
@@ -243,6 +254,7 @@
             transform: translate(-50%, -50%) rotate(45deg);
             opacity: 0;
             animation: border-top-expand 0.5s ease-in-out 8s forwards;
+            animation-play-state: paused;
         }
 
         /*************************/
@@ -308,7 +320,6 @@
     }
 
     &__content {
-        
         &--1 {
             height: 100%;
             width: 100%;
@@ -318,7 +329,8 @@
             opacity: 0;
             animation: content-expand 0.5s ease-in-out 3s forwards;
             overflow: hidden;
-            
+            animation-play-state: paused;
+
             & h2,
             & p {
                 width: 85%;
@@ -327,7 +339,7 @@
                 padding-right: 10rem;
             }
         }
-        
+
         &--2 {
             height: 100%;
             width: 100%;
@@ -338,7 +350,8 @@
             animation: content-expand 0.5s ease-in-out 5s forwards;
             overflow: hidden;
             text-align: right;
-            
+            animation-play-state: paused;
+
             & h2,
             & p {
                 position: relative;
@@ -349,7 +362,7 @@
                 padding-left: 10rem;
             }
         }
-        
+
         &--3 {
             height: 100%;
             width: 100%;
@@ -363,7 +376,8 @@
             opacity: 0;
             animation: content-expand 0.5s ease-in-out 7s forwards;
             overflow: hidden;
-            
+            animation-play-state: paused;
+
             & h2,
             & p {
                 width: 85%;
@@ -372,7 +386,7 @@
                 padding-right: 15rem;
             }
         }
-        
+
         &--4 {
             height: 100%;
             width: 100%;
@@ -387,7 +401,8 @@
             animation: content-expand 0.5s ease-in-out 9s forwards;
             overflow: hidden;
             text-align: right;
-            
+            animation-play-state: paused;
+
             & h2,
             & p {
                 position: relative;
@@ -398,7 +413,7 @@
                 padding-left: 10rem;
             }
         }
-        
+
         /**************************/
         /* Animation du background */
         /***************************/
@@ -433,6 +448,22 @@
             100% {
                 transform: translateX(0);
             }
+        }
+    }
+
+    // Ciblage des éléments enfants lorsque la classe `animate` est ajoutée
+    &--animate {
+        & .about-us__article,
+        & .about-us__wraper,
+        & .about-us__image-container::after,
+        & .about-us__circle img,
+        & .about-us__magnifier img,
+        & .about-us__guy img,
+        & .about-us__content--1,
+        & .about-us__content--2,
+        & .about-us__content--3,
+        & .about-us__content--4 {
+            animation-play-state: running;
         }
     }
 }
