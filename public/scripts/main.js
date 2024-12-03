@@ -560,4 +560,30 @@ Cordialement,
             hidePrivacyModal();
         }
     });
+
+    /**********************
+     *** contact footer ***
+     **********************/
+    // Sélection des liens de contact
+    const footerContactLink = document.querySelector(".footer__contact-us");
+
+    footerContactLink.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const email = "recrutement@example.com"; // Replace with your email
+        const subject = "Nous contacter";
+        const body = `
+Bonjour,
+
+Je souhaite obtenir plus d'informations sur vos services.
+
+Cordialement,
+[Votre nom]
+        `.trim();
+
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    });
 });
