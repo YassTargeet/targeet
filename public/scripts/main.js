@@ -303,6 +303,33 @@ Cordialement,
      *** Profiles ***
      ****************/
 
+    // Position aléatoire
+    const technologies = [
+        "Dynamics365",
+        "Office365",
+        "Power Platform",
+        ".Net",
+        "PowerBi",
+        "Biztalk",
+    ];
+
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+
+    // Mélanger les noms
+    const shuffledTechnologies = shuffleArray(technologies);
+
+    // Sélectionner tous les <h3> et mettre les noms mélangés
+    const titles = document.querySelectorAll(".profiles__item-title");
+    titles.forEach((title, index) => {
+        title.textContent = shuffledTechnologies[index];
+    });
+
     //    const profileModal = document.getElementById("profile-detail-modal");
     const profileModalCarousel = profileModal.querySelector(".profile-modal__carousel");
     const closeModalButton = profileModal.querySelector(".profile-modal__close");
@@ -431,6 +458,7 @@ Cordialement,
     document.querySelectorAll(".profiles__button").forEach((button) => {
         button.addEventListener("click", () => {
             const technology = button.previousElementSibling.textContent.trim();
+            console.log(technology);
 
             // Charger les profils correspondants
             const matchingProfiles = profilesData.profile.filter((profile) =>
@@ -513,6 +541,8 @@ Cordialement,
             closeLegalModal();
         }
     });
+
+    // TODO: faire le stop scroll en dehors de la modale
 
     /*********************************
      *** Politique confidentialité ***
