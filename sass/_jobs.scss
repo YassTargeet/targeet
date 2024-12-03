@@ -98,7 +98,6 @@
         width: 100%;
         padding: 2rem;
         @include mixins.flexbox(column, space-between, flex-start);
-        
     }
 
     &__title {
@@ -109,7 +108,7 @@
 
     &__infos {
         height: 20%;
-        width:30%;
+        width: 30%;
         margin-left: 1rem;
         margin-bottom: 1rem;
         @include mixins.flexbox(column, center, center, 0.4rem);
@@ -160,7 +159,7 @@
     &__tag {
         @include mixins.flexbox(row wrap, center, center, 0.5rem);
         margin-bottom: 1rem;
-        
+
         & p {
             background-color: variables.$warning-color;
             padding: 0.5rem 1rem;
@@ -169,7 +168,7 @@
             color: variables.$background-color;
         }
     }
-    
+
     &__cta {
         @include mixins.flexbox(row, center, center, 1rem);
 
@@ -236,8 +235,6 @@
     }
 }
 
-
-
 /********************
 ***               ***
 ***   Modal Job   ***
@@ -256,11 +253,6 @@
     opacity: 0;
     z-index: 1000;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-
-    &--hidden {
-        visibility: hidden;
-        opacity: 0;
-    }
 
     &__overlay {
         position: absolute;
