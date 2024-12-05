@@ -465,4 +465,40 @@
             animation-play-state: running;
         }
     }
+
+    @media (max-width: 768px) {
+        // Masquer les bordures diagonales
+        &__wraper {
+            display: none;
+        }
+
+        // Articles en disposition verticale
+        &__articles {
+            display: flex; // Utilisation de flexbox pour empiler les articles
+            flex-direction: column; // Disposition verticale
+            gap: 2rem; // Espacement entre les articles
+        }
+
+        &__article {
+            width: 100%; // Chaque article occupe toute la largeur
+            height: auto; // Ajustement automatique de la hauteur
+            opacity: 1; // Rendre visible sans animation
+            transform: none; // Supprimer les transformations
+            position: static; // Réinitialiser la position pour s'aligner dans le flux
+            animation: none; // Supprimer les animations
+        }
+
+        &__content {
+            padding: 2rem; // Ajouter de l'espace pour aérer
+            background-color: variables.$background-color; // Couleur de fond neutre
+
+            & h2,
+            & p {
+                width: 100%; // Texte prend toute la largeur
+                transform: none; // Suppression des transformations
+                animation: none; // Pas d'animation
+                padding: 0; // Réinitialiser le padding
+            }
+        }
+    }
 }

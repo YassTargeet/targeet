@@ -9,92 +9,6 @@
 ******************/
 
 .header {
-    // &__container {
-    //     position: sticky;
-    //     top: 0;
-    //     width: 100%;
-    //     @include mixins.flexbox(row, space-between, center); // Utilisation de la mixin flexbox
-    //     z-index: 100;
-    //     transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
-
-    //     &--background {
-    //         background: rgba(255, 255, 255, 0.25); // Effet de verre dépoli
-    //         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    //         backdrop-filter: blur(10px);
-    //         -webkit-backdrop-filter: blur(10px);
-    //         border-bottom: 1px solid rgba(255, 255, 255, 0.28);
-    //     }
-    // }
-
-    // &__logo {
-    //     height: 100%;
-    //     width: 200px;
-    //     @include mixins.flexbox(row, center, center);
-
-    //     & img {
-    //         height: 100%;
-    //         width: 100%;
-    //         filter: contrast(110%) saturate(100%) brightness(110%);
-    //     }
-    // }
-
-    // &__navbar {
-    //     width: 35%;
-    //     margin-right: 5rem;
-    // }
-
-    // &__nav-list {
-    //     @include mixins.flexbox(row, space-between, center);
-    //     list-style: none;
-    // }
-
-    // &__nav-link {
-    //     position: relative;
-    //     padding: 10px 0;
-    //     display: inline-block;
-    //     overflow: hidden;
-    //     color: color.adjust(variables.$primary-color, $lightness: 10%); // Couleur du lien
-    //     font-size: 1.2rem;
-    //     text-decoration: none;
-    //     transition: all 0.3s ease-in-out;
-
-    //     &:hover {
-    //         color: color.adjust(variables.$success-color, $lightness: 20%);
-    //         transform: scale(1.1);
-    //     }
-
-    //     &::before,
-    //     &::after {
-    //         content: "";
-    //         position: absolute;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 2px;
-    //         background: color.adjust(
-    //             variables.$success-color,
-    //             $lightness: 20%
-    //         ); // Couleur des lignes
-    //         transition: all 0.3s ease-in-out;
-    //     }
-
-    //     &::before {
-    //         bottom: 0;
-    //         transform: translateX(-100%);
-    //         opacity: 0;
-    //     }
-
-    //     &::after {
-    //         top: 0;
-    //         opacity: 0;
-    //         transform: translateX(100%);
-    //     }
-
-    //     &:hover::before,
-    //     &:hover::after {
-    //         opacity: 1;
-    //         transform: translateX(0);
-    //     }
-    // }
 
     &__container {
         position: sticky;
@@ -118,6 +32,11 @@
         width: 200px;
         @include mixins.flexbox(row, center, center);
 
+        @media (max-width: 768px) {
+            height: 100%;
+            width: 100px;
+        }
+
         & img {
             height: 100%;
             width: 100%;
@@ -129,7 +48,7 @@
         display: none; // Caché sur les grands écrans
         background: none;
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
         z-index: 110; // Toujours au-dessus du menu
         color: variables.$primary-color;
@@ -141,7 +60,7 @@
     }
 
     &__navbar {
-        width: 35%;
+        width: 50%;
         margin-right: 5rem;
 
         @media (max-width: 768px) {
@@ -164,7 +83,11 @@
         @include mixins.flexbox(column, flex-end, flex-end); // Menu vertical sur mobile
 
         @media (min-width: 769px) {
-            @include mixins.flexbox(row, space-between, center); // Retour à horizontal sur grands écrans
+            @include mixins.flexbox(
+                row,
+                space-between,
+                center
+            ); // Retour à horizontal sur grands écrans
         }
 
         list-style: none;
@@ -224,12 +147,15 @@
         }
     }
 
-
     &__wrapper {
         position: static;
         top: 0;
         width: 100%;
         height: 100vh;
+
+        @media (max-width: 768px) {
+            height: 30vh; // Retour à la taille normale sur grands écrans
+        }
     }
 
     &__content {
@@ -239,6 +165,10 @@
         width: 100%;
         min-height: 1080px;
         z-index: 2;
+
+        @media (max-width: 768px) {
+            height: fit-content; // Retour à la taille normale sur grands écrans
+        }
 
         & img {
             width: 100%;
@@ -258,6 +188,14 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (max-width: 768px) {
+            height: 220px; 
+            top: 10%;
+            left: 5%;
+            width: 100%;
+            transform: translate(0%,0%);
+        }
     }
 
     &__title {
@@ -265,5 +203,9 @@
         font-family: variables.$cursive-font; // Font définie dans les variables
         font-size: 4rem;
         font-weight: 300;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
     }
 }
