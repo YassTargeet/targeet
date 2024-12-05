@@ -59,6 +59,22 @@ Cordialement,
         window.location.href = mailtoLink;
     });
 
+    const burgerButton = document.querySelector(".header__burger");
+    const navbar = document.querySelector(".header__navbar");
+
+    // Bascule du menu burger
+    burgerButton.addEventListener("click", () => {
+        navbar.classList.toggle("header__navbar--active");
+    });
+
+    // Optionnel : fermer le menu lorsque l'on clique sur un lien
+    const navLinks = navbar.querySelectorAll(".header__nav-link");
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("header__navbar--active");
+        });
+    });
+
     /****************
      *** About-us ***
      ****************/
@@ -133,6 +149,7 @@ Cordialement,
                     <p class="jobs__description--content">${job.description}</p>
                 </div>
                 <div class="jobs__tag">
+                    <i class="fa-solid fa-tag"></i>
                     ${job.tags.map((tag) => `<p class="jobs__tag--item">${tag}</p>`).join("")}
                 </div>
                 <div class="jobs__cta">

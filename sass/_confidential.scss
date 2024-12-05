@@ -55,16 +55,17 @@
     &__close {
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #333;
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 1rem;
+        right: 0.5rem;
         cursor: pointer;
-        transition: color 0.3s ease;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             color: #f00;
+            transform: scale(1.5);
         }
     }
 
