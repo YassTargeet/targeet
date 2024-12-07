@@ -57,17 +57,17 @@
     &__close {
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #333;
         position: absolute;
-        top: 1rem;
-        right: 0.5rem;
+        top: 0.3rem;
+        right: 0.3rem;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         
         &:hover {
-            color: #f00;
-            transform: scale(1.5);
+            color: variables.$secondary-color;
+            transform: scale(1.5) rotate(180deg);
         }
     }
     

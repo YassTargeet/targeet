@@ -2,14 +2,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     /*****************
      *** Variables ***
      *****************/
-    // const headerContainer = document.querySelector(".header__container");
-    // const aboutUsSection = document.querySelector("#about-us");
-    // const jobsContainer = document.getElementById("carousel");
-    // const jobModal = document.getElementById("job-detail-modal");
-    // const jobModalBody = jobModal.querySelector(".jobs-modal__body");
-    // let animationsTriggered = false;
-    // const headerHeight = headerContainer.offsetHeight;
-    // const contactLink = document.getElementById("header__contact-us");
 
     const headerContainer = document.querySelector(".header__container");
     const aboutUsSection = document.querySelector("#about-us");
@@ -40,20 +32,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         event.preventDefault();
 
         // Define email details
-        //TODO: mettre la bonne adresse
-        const email = "recrutement@example.com"; // Replace with the desired email address
-        const subject = "Nous contacter"; // Subject line
+        const email = "y.beck@targeet.io"; // Replace with the desired email address
+        const cc = "recrutement@targeet.io"; // Replace with the desired
+        const subject = "Demande de contact"; // Subject line
         const body = `
 Bonjour,
 
-Je souhaite obtenir plus d'informations sur vos services.
+Je souhaite en savoir plus sur vos services. Quand seriez-vous disponible pour échanger ?
 
 Cordialement,
-[Votre nom]
         `.trim(); // Predefined email body text
 
         // Open the user's email client
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+        const mailtoLink = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(
             subject
         )}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
@@ -210,8 +201,8 @@ Cordialement,
     /*********************
      *** Email Helper ***
      *********************/
-    const sendEmail = (email, subject, body) => {
-        const mailtoLink = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(
+    const sendEmail = (email, cc, subject, body) => {
+        const mailtoLink = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(
             subject
         )}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
@@ -238,11 +229,13 @@ Cordialement,
             </div>
             <div class="jobs-modal__section">
                 <h2 class="jobs-modal__section-title">Missions</h2>
-                <ul>${job.missions.map((mission) => `<li>${mission}</li>`).join("")}</ul>
+                <ul class="jobs-modal__list">${job.missions
+                    .map((mission) => `<li>${mission}</li>`)
+                    .join("")}</ul>
             </div>
             <div class="jobs-modal__section">
                 <h2 class="jobs-modal__section-title">Profil recherché</h2>
-                <ul>
+                <ul class="jobs-modal__list">
                     <li><strong>Expérience :</strong> ${job.profile.experience}</li>
                     <li><strong>Compétences :</strong> ${job.profile.skills}</li>
                     <li><strong>Langues :</strong> ${job.profile.languages}</li>
@@ -285,21 +278,20 @@ Cordialement,
             const job = jobs.find((job) => job.id === jobId);
 
             if (job) {
-                // TODO: mettre la bonne adresse
-                const email = "recrutement@example.com"; // Adresse cible
-                const subject = `Candidature pour le poste de ${job.title} - id: ${job.id}`;
+                const email = "y.beck@targeet.io";
+                const cc = " recrutement@targeet.io";
+                const subject = `Candidature à l'offre ${job.title} - id: ${job.id}`;
                 const body = `
 Bonjour,
 
-Je suis intéressé(e) par l'offre "${job.title}" publiée sur votre site.
+Je suis intéressé par l'offre ${job.title} - id: ${job.id} que vous avez publiée. Quand seriez-vous disponible pour en discuter ?
 
-Merci de me contacter pour discuter davantage de cette opportunité.
+Vous trouverez mon CV en pièce jointe.
 
 Cordialement,
-[Votre nom]
                 `.trim();
 
-                sendEmail(email, subject, body);
+                sendEmail(email, cc, subject, body);
             }
         }
     });
@@ -320,16 +312,18 @@ Cordialement,
      *** Profiles ***
      ****************/
 
-    // Position aléatoire
-    const technologies = [
-        "Dynamics365",
-        "Office365",
-        "Power Platform",
-        ".Net",
-        "PowerBi",
-        "Biztalk",
-    ];
+    // Position aléatoire des technologies
+    // 1️⃣ Liste des technologies avec leurs images associées
+    const technologyImages = {
+        Dynamics365: "./public/img/dynamics.jpg",
+        Office365: "./public/img/office365.jpg",
+        "Power Platform": "./public/img/powerplatform.jpg",
+        ".Net": "./public/img/dotnet.jpg",
+        PowerBi: "./public/img/powerbi.jpg",
+        Biztalk: "./public/img/biztalk.jpg",
+    };
 
+    // 2️⃣ Fonction pour mélanger un tableau (algorithme de Fisher-Yates)
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -338,19 +332,51 @@ Cordialement,
         return array;
     };
 
-    // Mélanger les noms
-    const shuffledTechnologies = shuffleArray(technologies);
+    // 3️⃣ Sélectionner le conteneur principal où on va tout ajouter
+    const profilesContainer = document.querySelector(".profiles__container");
 
-    // Sélectionner tous les <h3> et mettre les noms mélangés
-    const titles = document.querySelectorAll(".profiles__item-title");
-    titles.forEach((title, index) => {
-        title.textContent = shuffledTechnologies[index];
+    // 4️⃣ Mélanger les technologies et créer chaque item de manière aléatoire
+    const shuffledTechnologies = shuffleArray(Object.entries(technologyImages)); // Transforme en tableau d'entrées (clé/valeur)
+
+    shuffledTechnologies.forEach(([technology, imageSrc], index) => {
+        // 5️⃣ Crée l'élément "item" (le conteneur de la carte)
+        const item = document.createElement("div");
+        item.classList.add(`profiles__item--${index + 1}`); // Ajoute une classe dynamique ex: profiles__item--1
+
+        // 6️⃣ Crée la div "profiles__image" et l'image à l'intérieur
+        const imageContainer = document.createElement("div");
+        imageContainer.classList.add("profiles__image");
+
+        const imageElement = document.createElement("img");
+        imageElement.src = imageSrc;
+        imageElement.alt = `Image de la technologie ${technology}`;
+        imageElement.classList.add("profiles__item-image");
+
+        imageContainer.appendChild(imageElement); // On ajoute l'image dans la div .profiles__image
+
+        // 7️⃣ Crée le titre <h3> et y ajoute le nom de la technologie
+        const titleElement = document.createElement("h3");
+        titleElement.classList.add("profiles__item-title");
+        titleElement.textContent = technology; // On ajoute le nom de la technologie
+
+        // 8️⃣ Crée le bouton "Rechercher"
+        const buttonElement = document.createElement("button");
+        buttonElement.classList.add("profiles__button");
+        buttonElement.textContent = "Rechercher"; // Texte du bouton
+
+        // 9️⃣ Ajoute tous les éléments à l'élément "item"
+        item.appendChild(imageContainer); // On ajoute la div .profiles__image
+        item.appendChild(titleElement); // On ajoute le <h3>
+        item.appendChild(buttonElement); // On ajoute le bouton
+
+        // 🔟 On ajoute l'élément "item" au conteneur principal .profiles__container
+        profilesContainer.appendChild(item);
     });
 
-    //    const profileModal = document.getElementById("profile-detail-modal");
+    // Gestion de le modale
+
     const profileModalCarousel = profileModal.querySelector(".profile-modal__carousel");
     const closeModalButton = profileModal.querySelector(".profile-modal__close");
-    //    const profileModalContent = profileModal.querySelector(".profile-modal__content");
 
     // Fonction pour créer le contenu du carousel
     const createProfileCarousel = (profiles) => {
@@ -361,13 +387,13 @@ Cordialement,
             const profileHTML = `
         <div class="profile-modal__card" id="profile-${profile.id}">
             <h2 class="profile-modal__title">${profile.codeName}</h2>
-            <p class="profile-modal__speciality"><strong>Speciality:</strong> ${
+            <p class="profile-modal__speciality"><strong>Spécialité:</strong> ${
                 profile.speciality
             }</p>
             
             <!-- Main Technologies -->
             <div class="profile-modal__section">
-                <h3 class="profile-modal__section-title">Main Technologies</h3>
+                <h3 class="profile-modal__section--title">Main Technologies</h3>
                 <ul class="profile-modal__technologies">
                     ${profile.mainTechnologies
                         .map((tech) => `<li class="profile-modal__tech">${tech}</li>`)
@@ -377,7 +403,7 @@ Cordialement,
 
             <!-- Experience -->
             <div class="profile-modal__section">
-                <h3 class="profile-modal__section-title">Experience</h3>
+                <h3 class="profile-modal__section--title">Experience</h3>
                 <ul class="profile-modal__experience">
                     ${profile.experience
                         .map(
@@ -401,7 +427,7 @@ Cordialement,
 
             <!-- Technical Skills -->
             <div class="profile-modal__section">
-                <h3 class="profile-modal__section-title">Technical Skills</h3>
+                <h3 class="profile-modal__section--title">Technical Skills</h3>
                 <ul class="profile-modal__skills">
                     ${profile.technicalSkills
                         .map((skill) => `<li class="profile-modal__skill">${skill}</li>`)
@@ -411,7 +437,7 @@ Cordialement,
 
             <!-- Soft Skills -->
             <div class="profile-modal__section">
-                <h3 class="profile-modal__section-title">Soft Skills</h3>
+                <h3 class="profile-modal__section--title">Soft Skills</h3>
                 <ul class="profile-modal__soft-skills">
                     ${profile.softSkills
                         .map((skill) => `<li class="profile-modal__soft-skill">${skill}</li>`)
@@ -493,18 +519,18 @@ Cordialement,
     // Gestion du bouton "Contacter"
     profileModalCarousel.addEventListener("click", (event) => {
         if (event.target.classList.contains("profile-modal__contact-button")) {
-            const email = event.target.dataset.email;
+            const email = "y.beck@targeet.io";
+            const cc = "recrutement@targeet.io";
             const profileName = event.target.dataset.profile;
-            const subject = `Intéressé par le profil : ${profileName}`;
+            const subject = `Intérêt pour un profil : ${profileName}`;
             const body = `
 Bonjour,
 
-Je souhaite obtenir plus d'informations sur le profil "${profileName}".
+Le profil ${profileName} que j'ai vu sur votre site m'intéresse. Serait-il possible d'en savoir plus ?
 
 Cordialement,
-[Votre nom]
             `.trim();
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+            const mailtoLink = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(
                 subject
             )}&body=${encodeURIComponent(body)}`;
             window.location.href = mailtoLink;
@@ -559,12 +585,10 @@ Cordialement,
         }
     });
 
-    // TODO: faire le stop scroll en dehors de la modale
-
     /*********************************
-     *** Politique confidentialité ***
+     *** Politique de confidentialité ***
      *********************************/
-    // Sélection des éléments de la modale "Politique de confidentialité"
+
     const privacyModal = document.getElementById("privacy-modal");
     const privacyOverlay = privacyModal.querySelector(".confidential__overlay");
     const privacyCloseButton = privacyModal.querySelector(".confidential__close");
@@ -590,14 +614,23 @@ Cordialement,
         privacyContent.classList.remove("show");
     };
 
-    // Écouteurs d'événements
-    privacyLinks.forEach((link) => {
-        link.addEventListener("click", (event) => {
+    // Écouteur global pour les clics sur les liens
+    document.addEventListener("click", (event) => {
+        // Clic sur les liens qui ouvrent la politique de confidentialité
+        if (event.target.matches('a[href="#politique-confidentialite"]')) {
             event.preventDefault();
-            showPrivacyModal();
-        });
+            closeLegalModal(); // Ferme la modale Mentions Légales
+            showPrivacyModal(); // Ouvre la modale Politique de Confidentialité
+        }
+
+        // Clic sur les liens qui ouvrent les Mentions Légales
+        if (event.target.matches('a[href="#mentions-legales"]')) {
+            event.preventDefault();
+            openLegalModal(); // Ouvre la modale Mentions Légales
+        }
     });
 
+    // Ajoute les événements pour fermer la modale de confidentialité
     privacyCloseButton.addEventListener("click", hidePrivacyModal);
     privacyOverlay.addEventListener("click", hidePrivacyModal);
 
@@ -615,20 +648,23 @@ Cordialement,
     const footerContactLink = document.querySelector(".footer__contact-us");
 
     footerContactLink.addEventListener("click", (event) => {
+        // Prevent the default navigation behavior
         event.preventDefault();
 
-        const email = "recrutement@example.com"; // Replace with your email
-        const subject = "Nous contacter";
+        // Define email details
+        const email = "y.beck@targeet.io"; // Replace with the desired email address
+        const cc = "recrutement@targeet.io"; // Replace with the desired
+        const subject = "Demande de contact"; // Subject line
         const body = `
 Bonjour,
 
-Je souhaite obtenir plus d'informations sur vos services.
+Je souhaite en savoir plus sur vos services. Quand seriez-vous disponible pour échanger ?
 
 Cordialement,
-[Votre nom]
-        `.trim();
+        `.trim(); // Predefined email body text
 
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+        // Open the user's email client
+        const mailtoLink = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(
             subject
         )}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
