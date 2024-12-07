@@ -120,6 +120,7 @@ Cordialement,
     const createJobItem = (job) => {
         const article = document.createElement("article");
         article.className = "jobs__item";
+        article.style.width = "652px";
         article.dataset.id = job.id;
 
         article.innerHTML = `
@@ -188,7 +189,7 @@ Cordialement,
                 '<button class="jobs__control jobs__control--next" aria-label="Suivant"><i class="fa-solid fa-chevron-right"></i></button>',
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 996,
                     settings: {
                         slidesToShow: 1,
                         centerPadding: "20px",
@@ -469,6 +470,15 @@ Cordialement,
                 '<button class="profile-modal__control profile-modal__control--prev" aria-label="Précédent"><i class="fa-solid fa-chevron-left"></i></button>',
             nextArrow:
                 '<button class="profile-modal__control profile-modal__control--next" aria-label="Suivant"><i class="fa-solid fa-chevron-right"></i></button>',
+            // responsive: [
+            //     {
+            //         breakpoint: 580,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             centerPadding: "0px",
+            //         },
+            //     },
+            // ],
         });
     };
 

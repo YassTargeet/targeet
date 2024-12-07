@@ -9,7 +9,6 @@
 ******************/
 
 .header {
-
     &__container {
         position: sticky;
         top: 0;
@@ -19,7 +18,7 @@
         transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
 
         &--background {
-            background: rgba(255, 255, 255, 0.40);
+            background: rgba(255, 255, 255, 0.4);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
@@ -32,15 +31,21 @@
         width: 250px;
         @include mixins.flexbox(row, center, center);
 
-        @media (max-width: 768px) {
-            height: 100%;
-            width: 100px;
-        }
-
+        
         & img {
             height: 100%;
             width: 100%;
             filter: contrast(110%) saturate(100%) brightness(110%);
+        }
+        
+        @media (max-width: 992px) {
+            height: 100%;
+            width: 180px;
+        }
+        
+        @media (max-width: 768px) {
+            height: 100%;
+            width: 100px;
         }
     }
 
@@ -65,11 +70,16 @@
 
         @media (max-width: 768px) {
             display: none; // Caché par défaut en dessous de 768px
+            width: 100%;
             position: absolute;
-            top: 70%;
-            right: -2.5rem;
-            background: variables.$background-color;
+            top: 100%;
+            right: -5rem;
             z-index: 100; // Juste en dessous du bouton burger
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.28);
         }
 
         &--active {
@@ -80,30 +90,18 @@
     }
 
     &__nav-list {
-        @include mixins.flexbox(column, flex-end, flex-end); // Menu vertical sur mobile
+        @include mixins.flexbox(row,space-between,center); // Retour à horizontal sur grands écrans
 
-        @media (min-width: 769px) {
-            @include mixins.flexbox(
-                row,
-                space-between,
-                center
-            ); // Retour à horizontal sur grands écrans
+        @media (max-width: 768px) {
+            @include mixins.flexbox(column, flex-end, flex-end); // Menu vertical sur mobile
+            font-size: 1rem;
         }
-
-        list-style: none;
-        padding: 0;
-        margin: 0;
     }
-
+    
     &__nav-link {
         padding: 1rem;
         text-align: center;
         width: 100%; // Occupe toute la largeur sur mobile
-
-        @media (min-width: 769px) {
-            width: auto; // Retour à la taille normale sur grands écrans
-        }
-
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -112,12 +110,12 @@
         font-weight: 500;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
-
+        
         &:hover {
             color: color.adjust(variables.$success-color, $lightness: 10%);
             transform: scale(1.1);
         }
-
+        
         &::before,
         &::after {
             content: "";
@@ -128,37 +126,49 @@
             background: color.adjust(variables.$success-color, $lightness: 10%);
             transition: all 0.3s ease-in-out;
         }
-
+        
         &::before {
             bottom: 0;
             transform: translateX(-100%);
             opacity: 0;
         }
-
+        
         &::after {
             top: 0;
             opacity: 0;
             transform: translateX(100%);
         }
-
+        
         &:hover::before,
         &:hover::after {
             opacity: 1;
             transform: translateX(0);
         }
-    }
+        
+        @media (max-width: 992px) {
+            font-size: 1rem;
+        }
 
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+    
     &__wrapper {
         position: static;
         top: 0;
         width: 100%;
         height: 100vh;
+        
+        @media (max-width: 992px) {
+            height: 350px; // Retour à la taille normale sur grands écrans
+        }
 
         @media (max-width: 768px) {
-            height: 30vh; // Retour à la taille normale sur grands écrans
+            height: 350px; // Retour à la taille normale sur grands écrans
         }
     }
-
+    
     &__content {
         position: absolute;
         top: 0;
@@ -190,12 +200,31 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        @media (max-width: 768px) {
-            height: 220px; 
-            top: 10%;
-            left: 5%;
+        @media (max-width: 992px) {
             width: 100%;
-            transform: translate(0%,0%);
+            height: 220px;
+            top: 21%;
+            left: 0%;
+            padding-left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 220px;
+            top: 17%;
+            left: 0%;
+            padding-left: 5%;
+            transform: translate(0%, 0%);
+        }
+        
+        @media (max-width: 576px) {
+            width: 100%;
+            height: 220px;
+            top: 12%;
+            left: 0%;
+            padding-left: 5%;
+            transform: translate(0%, 0%);
         }
     }
 
@@ -204,10 +233,18 @@
         font-family: variables.$cursive-font; // Font définie dans les variables
         font-size: 3rem;
         font-weight: 300;
-        text-shadow: 5px 3px 0 #7A7A7A;
+        text-shadow: 5px 3px 0 #7a7a7a;
 
+        @media (max-width: 992px) {
+            font-size: 2rem;
+        }
+        
         @media (max-width: 768px) {
-            font-size: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        @media (max-width: 576px) {
+            font-size: 1.2rem;
         }
     }
 }

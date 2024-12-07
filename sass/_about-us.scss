@@ -12,12 +12,16 @@
     width: 100%;
     height: 1200px;
 
+    @media (max-width: 992px) {
+        margin-bottom: 4rem;
+    }
+
     &__container {
         position: relative;
         width: 1440px;
         margin: auto;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             width: 100%;
         }
     }
@@ -44,7 +48,7 @@
             animation-play-state: paused;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             display: none;
         }
     }
@@ -141,7 +145,7 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 0 5rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -166,7 +170,7 @@
             animation: article-expand 0.5s ease-in-out 2.5s forwards;
             animation-play-state: paused;
 
-            @media (max-width: 768px) {
+            @media (max-width: 992px) {
                 position: static;
                 transform: translate(0%, 0%);
                 width: 85%;
@@ -184,7 +188,7 @@
             animation: article-expand 0.5s ease-in-out 4.5s forwards;
             animation-play-state: paused;
 
-            @media (max-width: 768px) {
+            @media (max-width: 992px) {
                 position: static;
                 transform: translate(0%, 0%);
                 width: 85%;
@@ -202,8 +206,10 @@
             right: -100%;
             animation: article-expand 0.5s ease-in-out 6.5s forwards;
             animation-play-state: paused;
-
-            @media (max-width: 768px) {
+            
+            @media (max-width: 992px) {
+                border-bottom: none;
+                border-top: variables.$warning-color solid 3px;
                 position: static;
                 transform: translate(0%, 0%);
                 width: 85%;
@@ -220,8 +226,10 @@
             left: 0%;
             animation: article-expand 0.5s ease-in-out 8.5s forwards;
             animation-play-state: paused;
-
-            @media (max-width: 768px) {
+            
+            @media (max-width: 992px) {
+                border-bottom: none;
+                border-top: variables.$success-color solid 3px;
                 position: static;
                 transform: translate(0%, 0%);
                 width: 85%;
@@ -357,7 +365,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             display: none;
         }
     }
@@ -382,7 +390,7 @@
                 padding-right: 10rem;
                 font-size: 0.9rem;
 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     padding-right: 0px;
                 }
             }
@@ -391,8 +399,8 @@
                 font-size: 1.5rem;
             }
 
-            @media (max-width: 768px) {
-                width: 85%;
+            @media (max-width: 992px) {
+                width: 100%;
             }
 
             
@@ -420,7 +428,7 @@
                 padding-left: 10rem;
                 font-size: 0.9rem;
                 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     position: static;
                     padding-left: 0;
                 }
@@ -440,10 +448,14 @@
                 right: -36%;
                 text-align: justify;
                 animation: text-right-entry 0.5s ease-in-out 5.5s forwards;
+
+                @media (max-width: 992px) {
+                left: 3%;
+            }
             }
 
-            @media (max-width: 768px) {
-                width: 85%;
+            @media (max-width: 992px) {
+                width: 100%;
                 text-align: left;
                 transform: translate(0%, 0%);
                 position: static;
@@ -473,7 +485,7 @@
                 padding-right: 15rem;
                 font-size: 0.9rem;
                 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     padding-right: 0px;
                 }
             }
@@ -494,8 +506,8 @@
                 margin: -1rem 0;
             }
 
-            @media (max-width: 768px) {
-                width: 85%;
+            @media (max-width: 992px) {
+                width: 100%;
                 text-align: left;
                 transform: translate(0%, 0%);
                 position: static;
@@ -528,7 +540,7 @@
                 padding-left: 10rem;
                 font-size: 0.9rem;
 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     position: static;
                     padding-left: 0;
                 }
@@ -538,8 +550,8 @@
                 font-size: 1.5rem;
             }
 
-            @media (max-width: 768px) {
-                width: 85%;
+            @media (max-width: 992px) {
+                width: 100%;
                 text-align: left;
                 transform: translate(0%, 0%);
                 position: static;
