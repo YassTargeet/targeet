@@ -30,6 +30,7 @@ Un projet développé dans le cadre de ma formation à **Metz Numeric School**. 
     - [5️⃣ **Ajouter une commande de compilation dans package.json**](#5️⃣-ajouter-une-commande-de-compilation-dans-packagejson)
     - [6️⃣ **Compiler automatiquement Sass**](#6️⃣-compiler-automatiquement-sass)
       - [🛠️ Dépannage](#️-dépannage)
+- [TRIGGER WARNING](#trigger-warning)
 - [**Auteurs:**](#auteurs)
 
 ---
@@ -249,6 +250,10 @@ Sass va surveiller les modifications des fichiers dans le dossier sass/ et gén�
   👉 Solution : Vérifiez le chemin des fichiers dans le fichier package.json.
 
 ---
+
+# TRIGGER WARNING
+
+La branche development est la branche sur laquelle on merge les modifications. Une fois les modification valider on les merge sur la branche production.
 
 # <u>**Auteurs:**</u>
 
