@@ -241,11 +241,11 @@ Sass va surveiller les modifications des fichiers dans le dossier sass/ et gén�
 
 #### 🛠️ Dépannage
 - Problème : "npx : commande introuvable"
-👉 Solution : Assurez-vous que Node.js est bien installé et que la variable d'environnement PATH est configurée.
+  👉 Solution : Assurez-vous que Node.js est bien installé et que la variable d'environnement PATH est configurée.
 
 - Problème : Sass ne compile pas automatiquement les modifications.
-👉 Solution : Vérifiez que la commande npm run sass est bien en cours d'exécution dans un terminal actif.
-👉 Solution : Vérifiez le chemin des fichiers dans le fichier package.json.
+  👉 Solution : Vérifiez que la commande npm run sass est bien en cours d'exécution dans un terminal actif.
+  👉 Solution : Vérifiez le chemin des fichiers dans le fichier package.json.
 
 ---
 
