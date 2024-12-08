@@ -252,7 +252,7 @@ Sass va surveiller les modifications des fichiers dans le dossier sass/ et gén�
 
 # <u>**Auteurs:**</u>
 
-Tristan THOUVENOT  
-création: 18/11/2024
-dernière mise à jour: 08/12/2024
-Étudiant développeur chez Metz Numeric School. Passionné par le développement front-end et back-end.
+- Tristan THOUVENOT  
+- création: 18/11/2024
+- dernière mise à jour: 08/12/2024
+- Étudiant développeur chez Metz Numeric School. Passionné par le développement front-end et back-end.
