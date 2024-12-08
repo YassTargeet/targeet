@@ -1,0 +1,172 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Développeur Full Stack",
+            "salary": "400k€/an",
+            "duration": "CDI",
+            "location": "Metz",
+            "description": "lorem120Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat hic magni voluptas quos qui iusto sunt ipsum rem accusantium eum? Repellendus, minus ea a corporis eos maxime mollitia est qui necessitatibus id et. Corrupti placeat qui cupiditate itaque voluptas perspiciatis eius vero laborum hic molestiae est consequuntur quam omnis fugit, et ipsa sequi modi laboriosam voluptatum officiis quod magni sapiente enim voluptate. Facere illo reiciendis fugit modi nobis eveniet? Ipsa voluptatum distinctio facere blanditiis inventore deleniti quibusdam sequi illo, ullam, a cumque ratione libero, ab dolorem eligendi id minima dignissimos saepe. Doloremque repellat ipsa quibusdam vel corporis porro veniam sit voluptatum reiciendis ex dicta consequatur incidunt, culpa vero molestiae soluta dolorum assumenda voluptate impedit! Qui dolore maiores facere cumque ducimus!",
+            "tags": ["Dynamics 365"],
+            "companyDescription": "Une entreprise de renommée internationale dans le secteur des technologies.",
+            "jobDescription": "Concevoir et développer des solutions robustes et évolutives.",
+            "missions": [
+                "Développer des fonctionnalités front-end et back-end.",
+                "Collaborer avec les équipes produit.",
+                "Participer aux revues de code."
+            ],
+            "profile": {
+                "experience": "2-3 ans dans un poste similaire.",
+                "skills": "Maîtrise de JavaScript et .Net.",
+                "languages": "Anglais courant."
+            }
+        },
+        {
+            "id": 2,
+            "title": "Administrateur Systèmes et Réseaux",
+            "salary": "35k€/an",
+            "duration": "CDI",
+            "location": "Paris",
+            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
+            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 3,
+            "title": "TAI",
+            "salary": "25k€/an",
+            "duration": "CDI",
+            "location": "Metz",
+            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
+            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 4,
+            "title": "RSI",
+            "salary": "55k€/an",
+            "duration": "CDI",
+            "location": "Strasbourg",
+            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
+            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 5,
+            "title": "Administrateur Réseaux",
+            "salary": "39k€/an",
+            "duration": "CDD",
+            "location": "Lyon",
+            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
+            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 6,
+            "title": "Développeur d'applications",
+            "salary": "75k€/an",
+            "duration": "CDI",
+            "location": "Londres",
+            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
+            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 7,
+            "title": "Expert Office 365",
+            "salary": "45k€/an",
+            "duration": "Freelance 3 mois",
+            "location": "Luxembourg",
+            "description": "Migration vers office 365",
+            "tags": ["Office 365"],
+            "companyDescription": "Mairie",
+            "jobDescription": "lorem125",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 8,
+            "title": "Expert Biztalk",
+            "salary": "85k€/an",
+            "duration": "Freelance 3 mois",
+            "location": "Luxembourg",
+            "description": "Migration vers office 365",
+            "tags": ["Office 365"],
+            "companyDescription": "Mairie",
+            "jobDescription": "lorem125",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        }
+    ]
+}

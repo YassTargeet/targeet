@@ -1,0 +1,403 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+@use "sass:color";
+
+/***************
+***          ***
+***   Jobs   ***
+***          ***
+****************/
+.jobs {
+    height: 1200px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    @include mixins.flexbox(column, center, flex-start);
+    margin-bottom: 8rem;
+    z-index: 1;
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        height: 100%;
+        width: 100%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__main-title {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+
+        & h2 {
+            font-size: 3rem;
+            color: variables.$background-color;
+            
+            @media (max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+
+    &__control {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: variables.$background-color;
+        transition: all 0.3s ease;
+        z-index: 2;
+
+        &--prev {
+            top: 50%;
+            left: 0%;
+            background-color: variables.$primary-color;
+        }
+
+        &--next {
+            top: 50%;
+            left: 100%;
+            background-color: variables.$primary-color;
+        }
+
+        &:hover {
+            height: 96px;
+            width: 96px;
+            background-color: color.adjust(variables.$success-color, $lightness: -10%);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__carousel {
+        width: 90%;
+        max-width: 1440px;
+        height: 60%;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__item {
+        height: 100%;
+        width: 40%;
+        background-color: variables.$background-color;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        padding: 2rem;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        @include mixins.flexbox(column, space-between, flex-start);
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: variables.$font-color;
+    }
+
+    &__infos {
+        height: 20%;
+        width: 40%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        @include mixins.flexbox(column, center, center, 0.4rem);
+        font-size: 0.8rem;
+    }
+
+    &__salary {
+        width: 100%;
+        @include mixins.flexbox(row nowrap, space-between, center);
+
+        & i {
+            display: block;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    &__duration {
+        width: 100%;
+        @include mixins.flexbox(row nowrap, space-between, center);
+
+        & i {
+            display: block;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    &__place {
+        width: 100%;
+        @include mixins.flexbox(row nowrap, space-between, center);
+
+        & i {
+            display: block;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        height: 50%;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        overflow-x: hidden;
+    }
+
+    &__tag {
+        @include mixins.flexbox(row wrap, center, center, 0.5rem);
+        margin-bottom: 1rem;
+
+        & i {
+            font-size: 1.5rem;
+        }
+
+        & p {
+            background-color: variables.$warning-color;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            color: variables.$background-color;
+        }
+    }
+
+    &__cta {
+        @include mixins.flexbox(row, center, center, 1rem);
+
+        & button {
+            background-color: variables.$primary-color;
+            color: variables.$background-color;
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: color.adjust(variables.$primary-color, $lightness: -10%);
+            }
+        }
+    }
+}
+
+.slick-track {
+    display: flex !important;
+    height: 100% !important;
+    position:relative
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-slide {
+    display: flex;
+    height: 100% !important;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.9);
+    flex: 0 0 auto;
+    overflow: hidden; 
+}
+
+// Effets appliqués uniquement si plus de 3 éléments
+.carousel--large .slick-slide:not(.slick-current) {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.carousel--large .slick-current {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+// Effets appliqués uniquement 2 éléments ou moins
+.carousel {
+    &--solo {
+        .slick-slide {
+            width: 40% !important; 
+            margin: auto; 
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    &--duo {
+        .slick-slide {
+            width: 40% !important;
+        }
+        .slick-track {
+            justify-content: center; 
+        }
+    }
+}
+
+/********************
+***               ***
+***   Modal Job   ***
+***               ***
+*********************/
+
+.jobs-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    @include mixins.flexbox(row, center, center);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); 
+        z-index: -1;
+    }
+
+    &__content {
+        background-color: #fff;
+        width: 90%;
+        max-width: 800px; 
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        &.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            margin: 1rem 0;
+        }
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #333;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: variables.$secondary-color;
+            transform: scale(1.5) rotate(180deg);
+        }
+    }
+
+    &__body {
+        color: variables.$font-color;
+        font-family: variables.$main-font;
+        line-height: 1.6;
+        overflow-y: auto; 
+        max-height: 80vh; 
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: #222;
+        text-align: center;
+    }
+
+    &__info {
+        @include mixins.flexbox(row, space-between, flex-start);
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+
+        & > p {
+            margin: 0;
+        }
+
+        & > p strong {
+            font-weight: bold;
+            color: #444;
+        }
+
+        @media (max-width: 992px) {
+            width: 80%;
+            margin: 0 auto 1.5rem auto;
+        }
+       
+        @media (max-width: 768px) {
+            width: 80%;
+            margin: 0 auto 1.5rem auto;
+        }
+    }
+
+    &__section {
+        margin-bottom: 1.5rem;
+    }
+
+    &__section-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #444;
+        border-left: 4px solid variables.$primary-color;
+        padding-left: 1rem;
+    }
+
+    &__list {
+        list-style-type: disc;
+        padding-left: 2rem;
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #666;
+        }
+    }
+
+    &__button {
+        background-color: variables.$primary-color;
+        color: variables.$background-color;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #138496;
+        }
+    }
+}

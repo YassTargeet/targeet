@@ -1,0 +1,438 @@
+{
+    "profile": [
+        {
+            "id": "1",
+            "codeName": "DevNinja21",
+            "mainTechnologies": [".Net", "Dynamics365", "Power Platform"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "2",
+            "codeName": "DevNinja22",
+            "mainTechnologies": ["Office365", "PowerBi"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "3",
+            "codeName": "DevNinja23",
+            "mainTechnologies": [".Net", "Biztalk", "Power Platform"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "4",
+            "codeName": "DevNinja24",
+            "mainTechnologies": ["Biztalk", "Dynamics365", "Office365"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "5",
+            "codeName": "DevNinja25",
+            "mainTechnologies": [".Net", "Dynamics365", "Power Platform", "Biztalk", "Office365"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "6",
+            "codeName": "DevNinja26",
+            "mainTechnologies": [".Net", "Power Platform", "PowerBi"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "7",
+            "codeName": "DevNinja21",
+            "mainTechnologies": [".Net", "Dynamics365", "Power Platform"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "9",
+            "codeName": "DevNinja29",
+            "mainTechnologies": [".Net", "Power Platform"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "10",
+            "codeName": "DevNinja210",
+            "mainTechnologies": ["Office365", "Dynamics365", "Power Platform", "PowerBi"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        },
+        {
+            "id": "11",
+            "codeName": "DevNinja211",
+            "mainTechnologies": ["Dynamics365", "Power Platform", "Office365"],
+            "speciality": "Développement logiciel",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
+        }
+    ]
+}
