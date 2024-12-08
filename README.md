@@ -206,8 +206,11 @@ Vous devriez voir s'afficher un numéro de version similaire à 1.81.0.
 La structure doit être:
 
 └── public/
+
    └── css/ (fichiers compilés ici)
+
 └── sass/ (fichiers sources Sass ici)
+
    └── main.scss
 
 ### 5️⃣ **Ajouter une commande de compilation dans package.json**
