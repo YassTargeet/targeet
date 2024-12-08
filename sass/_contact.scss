@@ -7,13 +7,15 @@
 ***             ***
 *******************/
 
+// TODO: FICHIER de style pour le formulaire de contact. A utiliser quand le module d'envoie de mail sera mis en place
+
 .contact {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    @include mixins.flexbox(row, center, center); // Utilisation de la mixin flexbox depuis "mixins"
+    @include mixins.flexbox(row, center, center); 
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1000;
     visibility: hidden;
@@ -29,7 +31,7 @@
     }
 
     &__content {
-        background-color: #fff; // Utilisation de la variable $white depuis "variables"
+        background-color: #fff; 
         border-radius: 10px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
         width: 90%;
@@ -49,7 +51,7 @@
         background: none;
         border: none;
         font-size: 1.5rem;
-        color: #333; // Variable pour la couleur sombre
+        color: #333; 
         position: absolute;
         top: 10px;
         right: 10px;
@@ -57,7 +59,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: #f00; // Variable pour la couleur d'erreur
+            color: #f00; 
         }
     }
 
@@ -68,13 +70,13 @@
     &__title {
         font-size: 1.8rem;
         margin-bottom: 1rem;
-        color: #333; // Variable pour la couleur de texte standard
+        color: #333; 
     }
 
     &__description {
         font-size: 1rem;
         margin-bottom: 2rem;
-        color: #666; // Variable pour le texte secondaire
+        color: #666; 
     }
 
     &__form {
@@ -83,11 +85,11 @@
             flex-start,
             stretch,
             1.5rem
-        ); // Utilisation de flexbox depuis les mixins
+        ); 
     }
 
     &__field {
-        @include mixins.flexbox(column, flex-start, stretch, 0.5rem); // Flexbox avec espacement
+        @include mixins.flexbox(column, flex-start, stretch, 0.5rem); 
         text-align: left;
 
         & label {
@@ -101,11 +103,11 @@
         & input[type="file"] {
             width: 100%;
             padding: 0.8rem 1rem;
-            border: 1px solid #ccc; // Bordure légère
+            border: 1px solid #ccc; 
             border-radius: 5px;
             font-size: 1rem;
             color: #333;
-            background-color: #f9f9f9; // Fond clair
+            background-color: #f9f9f9; 
             transition: border-color 0.3s ease;
 
             &:focus {
@@ -132,7 +134,7 @@
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: #138496; // Couleur primaire en hover
+            background-color: #138496;
         }
     }
 }

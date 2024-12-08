@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const privacyCloseButton = privacyModal.querySelector(".confidential__close");
     const footerContactLink = document.querySelector(".footer__contact-us");
 
+    // TODO: supprimer les mail-to quand le module d'envoie de mail sera mis en place
+
     /*****************
      ***           ***
      *** Load JSON ***

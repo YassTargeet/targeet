@@ -136,6 +136,7 @@
         }
     }
 
+    // Container des artciles
     &__articles {
         position: relative;
         width: 1440px;
@@ -154,6 +155,7 @@
         }
     }
 
+    // Container des textes
     &__article {
         width: 100%;
         height: 400px;
@@ -370,6 +372,7 @@
         }
     }
 
+    // Contenu présent dans .article
     &__content {
         &--1 {
             height: 100%;

@@ -69,12 +69,12 @@
         margin-right: 5rem;
 
         @media (max-width: 768px) {
-            display: none; // Caché par défaut en dessous de 768px
+            display: none; 
             width: 100%;
             position: absolute;
             top: 100%;
             right: -5rem;
-            z-index: 100; // Juste en dessous du bouton burger
+            z-index: 100; 
             background: rgba(255, 255, 255, 0.4);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
@@ -84,16 +84,16 @@
 
         &--active {
             @media (max-width: 768px) {
-                display: block; // Affiché quand actif
+                display: block; 
             }
         }
     }
 
     &__nav-list {
-        @include mixins.flexbox(row,space-between,center); // Retour à horizontal sur grands écrans
+        @include mixins.flexbox(row,space-between,center); 
 
         @media (max-width: 768px) {
-            @include mixins.flexbox(column, flex-end, flex-end); // Menu vertical sur mobile
+            @include mixins.flexbox(column, flex-end, flex-end); 
             font-size: 1rem;
         }
     }
@@ -101,7 +101,7 @@
     &__nav-link {
         padding: 1rem;
         text-align: center;
-        width: 100%; // Occupe toute la largeur sur mobile
+        width: 100%; 
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -161,11 +161,11 @@
         height: 100vh;
         
         @media (max-width: 992px) {
-            height: 350px; // Retour à la taille normale sur grands écrans
+            height: 350px; 
         }
 
         @media (max-width: 768px) {
-            height: 350px; // Retour à la taille normale sur grands écrans
+            height: 350px; 
         }
     }
     
@@ -178,7 +178,7 @@
         z-index: 2;
 
         @media (max-width: 768px) {
-            height: fit-content; // Retour à la taille normale sur grands écrans
+            height: fit-content; 
         }
 
         & img {
@@ -229,8 +229,8 @@
     }
 
     &__title {
-        color: variables.$background-color; // Utilisation de la variable pour la couleur
-        font-family: variables.$cursive-font; // Font définie dans les variables
+        color: variables.$background-color; 
+        font-family: variables.$cursive-font; 
         font-size: 3rem;
         font-weight: 300;
         text-shadow: 5px 3px 0 #7a7a7a;

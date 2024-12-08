@@ -233,8 +233,8 @@
 .carousel {
     &--solo {
         .slick-slide {
-            width: 40% !important; // Ajuste la taille de l'élément
-            margin: auto; // Centre l'élément
+            width: 40% !important; 
+            margin: auto; 
             justify-self: center;
             align-self: center;
         }
@@ -242,10 +242,10 @@
 
     &--duo {
         .slick-slide {
-            width: 40% !important; // Ajuste la taille des deux éléments
+            width: 40% !important;
         }
         .slick-track {
-            justify-content: center; // Aligne les deux éléments au centre
+            justify-content: center; 
         }
     }
 }
@@ -262,7 +262,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Overlay sombre */
+    background-color: rgba(0, 0, 0, 0.6); 
     @include mixins.flexbox(row, center, center);
     visibility: hidden;
     opacity: 0;
@@ -275,18 +275,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); /* Overlay transparent */
+        background-color: rgba(0, 0, 0, 0.6); 
         z-index: -1;
     }
 
     &__content {
         background-color: #fff;
         width: 90%;
-        max-width: 800px; /* Largeur maximale */
+        max-width: 800px; 
         border-radius: 10px;
         padding: 2rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-        transform: translateY(-50px); /* Animation d’apparition */
+        transform: translateY(-50px);
         opacity: 0;
         transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -321,8 +321,8 @@
         color: variables.$font-color;
         font-family: variables.$main-font;
         line-height: 1.6;
-        overflow-y: auto; /* Permet le défilement si le contenu est trop long */
-        max-height: 80vh; /* Limite la hauteur à 80% de la vue */
+        overflow-y: auto; 
+        max-height: 80vh; 
     }
 
     &__title {
@@ -367,7 +367,7 @@
         font-weight: bold;
         margin-bottom: 1rem;
         color: #444;
-        border-left: 4px solid variables.$primary-color; /* Bordure pour différencier */
+        border-left: 4px solid variables.$primary-color;
         padding-left: 1rem;
     }
 
