@@ -471,6 +471,44 @@
                 "Résolution de problèmes",
                 "Esprit d'équipe"
             ]
+        },
+        {
+            "id": "13",
+            "codeName": "ExpBiz-2",
+            "mainTechnologies": ["Biztalk",".Net"],
+            "speciality": "Spécialiste Biztalk",
+            "experience": [
+                {
+                    "years": "2021-2023",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "2018-2021",
+                    "company": "Nom de l'entreprise",
+                    "missions": [
+                        "Gestion de projets techniques.",
+                        "Coordination d'équipes pluridisciplinaires.",
+                        "Mise en place de solutions adaptées aux besoins clients."
+                    ]
+                }
+            ],
+            "technicalSkills": [
+                "Développement web : HTML, CSS, JavaScript",
+                "Backend : Node.js, PHP",
+                "Frameworks : React, Angular",
+                "Gestion de bases de données : MySQL, MongoDB"
+            ],
+            "softSkills": [
+                "Gestion de projet",
+                "Communication efficace",
+                "Résolution de problèmes",
+                "Esprit d'équipe"
+            ]
         }
     ]
 }

@@ -189,6 +189,50 @@
                 "skills": "C#, git, Visual Studio",
                 "languages": "Français et anglais."
             }
+        },
+        {
+            "id": 10,
+            "title": "Developpeur d'application .Net Azure",
+            "salary": "45k€/an",
+            "duration": "CDI",
+            "location": "Metz",
+            "description": "Renforcement de l'équipe de développement",
+            "tags": [".Net"],
+            "companyDescription": "Targeet",
+            "jobDescription": "Nous sommes à la recherche d'un développeur Junior afin de renforcer l'équipe de développement en place",
+            "missions": [
+                "Maintenance CD/CI",
+                "Gestion du back-end",
+                "Développement de nouvelles fonctionnalités",
+                "Support et correction de bug"
+            ],
+            "profile": {
+                "experience": "Débutant accepté",
+                "skills": "C#, git, Visual Studio",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 11,
+            "title": "Consultant technique D365 CE",
+            "salary": "45k€/an",
+            "duration": "CDI",
+            "location": "Metz",
+            "description": "Renforcement de l'équipe de développement",
+            "tags": [".Net"],
+            "companyDescription": "Targeet",
+            "jobDescription": "Nous sommes à la recherche d'un développeur Junior afin de renforcer l'équipe de développement en place",
+            "missions": [
+                "Maintenance CD/CI",
+                "Gestion du back-end",
+                "Développement de nouvelles fonctionnalités",
+                "Support et correction de bug"
+            ],
+            "profile": {
+                "experience": "Débutant accepté",
+                "skills": "C#, git, Visual Studio",
+                "languages": "Français et anglais."
+            }
         }
     ]
 }
