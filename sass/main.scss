@@ -1,0 +1,63 @@
+/******************
+***             ***
+***   Imports   ***
+***             ***
+*******************/
+
+// On importe les fichiers
+@use "variables" as variables;
+@use "mixins" as mixins;
+@use "reset";
+
+@use "header";
+@use "about-us";
+@use "jobs";
+@use "profiles";
+@use "footer";
+@use "contact";
+@use "legal";
+@use "confidential";
+
+/******************
+***             ***
+***   Général   ***
+***             ***
+*******************/
+
+body {
+    background-color: variables.$background-color;
+    color: variables.$font-color;
+    font-family: variables.$main-font;
+    scrollbar-width: 1px;
+    scrollbar-color: #3498db #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: variables.$title-font;
+}
+
+/* Pour Chrome, Edge et Safari */
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: variables.$background-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: variables.$primary-color;
+    border-radius: 6px;
+    border: 3px solid #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: variables.$primary-color;
+}
+
+// TODO: bug de scroll quand on est en responsive > 992px
