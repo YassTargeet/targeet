@@ -1,0 +1,140 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+
+/******************
+***             ***
+***   Contact   ***
+***             ***
+*******************/
+
+// TODO: FICHIER de style pour le formulaire de contact. A utiliser quand le module d'envoie de mail sera mis en place
+
+.contact {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include mixins.flexbox(row, center, center); 
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease;
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
+
+    &__content {
+        background-color: #fff; 
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 500px;
+        padding: 2rem;
+        transform: translateY(-50px);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+
+        &.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #333; 
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #f00; 
+        }
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #333; 
+    }
+
+    &__description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        color: #666; 
+    }
+
+    &__form {
+        @include mixins.flexbox(
+            column,
+            flex-start,
+            stretch,
+            1.5rem
+        ); 
+    }
+
+    &__field {
+        @include mixins.flexbox(column, flex-start, stretch, 0.5rem); 
+        text-align: left;
+
+        & label {
+            font-size: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        & input,
+        & textarea,
+        & input[type="file"] {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #f9f9f9; 
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: variables.$primary-color;
+                outline: none;
+            }
+        }
+
+        & textarea {
+            resize: none;
+        }
+    }
+
+    &__button {
+        background-color: variables.$primary-color;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #138496;
+        }
+    }
+}
