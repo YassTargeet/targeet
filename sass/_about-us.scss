@@ -458,9 +458,9 @@
                 animation: text-right-entry 0.5s ease-in-out 5.5s forwards;
                 padding-left: 10rem;
                 font-size: 0.9rem;
-                
+
                 @media (max-width: 1440px) {
-                    right: -2%;
+                    right: -6%;
                     width: 95%;
                     padding-left: 0;
                 }
@@ -470,11 +470,11 @@
                     padding-left: 0;
                 }
             }
-            
+
             & h2 {
                 font-size: 1.5rem;
             }
-            
+
             & ul {
                 font-size: 0.9rem;
                 margin: 1rem 0;
@@ -485,17 +485,17 @@
                 right: -36%;
                 text-align: justify;
                 animation: text-right-entry 0.5s ease-in-out 5.5s forwards;
-                
+
                 @media (max-width: 1440px) {
                     width: 80%;
-                    right: -16%;
+                    right: -20%;
                 }
 
                 @media (max-width: 992px) {
                     left: 3%;
                 }
             }
-            
+
             @media (max-width: 1440px) {
                 border-left: variables.$secondary-color solid 3px;
             }
@@ -535,7 +535,7 @@
                     width: 90%;
                     padding-right: 2rem;
                 }
-                
+
                 @media (max-width: 992px) {
                     padding-right: 0px;
                 }
@@ -555,7 +555,7 @@
                 left: 3%;
                 text-align: justify;
                 margin: -1rem 0;
-                
+
                 @media (max-width: 1440px) {
                     width: 85%;
                 }
@@ -602,7 +602,7 @@
                 @media (max-width: 1440px) {
                     padding-left: 2rem;
                     width: 90%;
-                    right: -7%;
+                    right: -10%;
                 }
                 @media (max-width: 992px) {
                     position: static;
@@ -614,7 +614,7 @@
                 font-size: 1.5rem;
             }
 
-             @media (max-width: 1440px) {
+            @media (max-width: 1440px) {
                 border-left: variables.$success-color solid 3px;
             }
 
