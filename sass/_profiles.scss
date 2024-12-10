@@ -25,6 +25,10 @@
         position: absolute;
         bottom: 0%;
         left: 50%;
+        
+        @media (max-width: 1440px) {
+            width: 90%;
+        }
     }
 
     &__title {
@@ -237,6 +241,10 @@
         text-shadow: 5px 3px 0 color.scale(variables.$background-color, $blackness: 20%);
         transform: translate(-50%, -50%);
         transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+
+        @media (max-width: 1440px) {
+            font-size: 2.2rem;
+        }
 
         @media (max-width: 992px) {
             font-size: 2rem;
@@ -527,6 +535,10 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        @media (max-width: 1440px) {
+            height: 100%;
+        }
     }
 
     &__close {
@@ -545,11 +557,7 @@
             transform: scale(1.5) rotate(180deg);
         }
 
-        @media (max-width: 992px) {
-            top:10%;
-        }
-        
-        @media (max-width: 768px) {
+        @media (max-width: 1440px) {
             top:10%;
         }
     }

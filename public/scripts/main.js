@@ -345,6 +345,13 @@ Cordialement,
             // Responsive settings for smaller screens
             responsive: [
                 {
+                    breakpoint: 1444,
+                    settings: {
+                        slidesToShow: 2,
+                        centerPadding: "20px",
+                    },
+                },
+                {
                     breakpoint: 996,
                     settings: {
                         slidesToShow: 1,
@@ -921,7 +928,6 @@ Cordialement,
     document.querySelectorAll(".profiles__button").forEach((button) => {
         button.addEventListener("click", () => {
             const technology = button.previousElementSibling.textContent.trim();
-            console.log(technology);
 
             // Charger les profils correspondants
             const matchingProfiles = profilesData.profile.filter((profile) =>
