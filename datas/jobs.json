@@ -2,12 +2,12 @@
     "jobs": [
         {
             "id": 1,
-            "title": "Développeur Full Stack",
-            "salary": "400k€/an",
-            "duration": "CDI",
-            "location": "Metz",
+            "title": "Développeur .Net Core",
+            "salary": "500/550€ Jr",
+            "duration": "1 an",
+            "location": "Bordeaux",
             "description": "lorem120Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat hic magni voluptas quos qui iusto sunt ipsum rem accusantium eum? Repellendus, minus ea a corporis eos maxime mollitia est qui necessitatibus id et. Corrupti placeat qui cupiditate itaque voluptas perspiciatis eius vero laborum hic molestiae est consequuntur quam omnis fugit, et ipsa sequi modi laboriosam voluptatum officiis quod magni sapiente enim voluptate. Facere illo reiciendis fugit modi nobis eveniet? Ipsa voluptatum distinctio facere blanditiis inventore deleniti quibusdam sequi illo, ullam, a cumque ratione libero, ab dolorem eligendi id minima dignissimos saepe. Doloremque repellat ipsa quibusdam vel corporis porro veniam sit voluptatum reiciendis ex dicta consequatur incidunt, culpa vero molestiae soluta dolorum assumenda voluptate impedit! Qui dolore maiores facere cumque ducimus!",
-            "tags": ["Dynamics 365"],
+            "tags": [".Net"],
             "companyDescription": "Une entreprise de renommée internationale dans le secteur des technologies.",
             "jobDescription": "Concevoir et développer des solutions robustes et évolutives.",
             "missions": [
@@ -23,7 +23,7 @@
         },
         {
             "id": 2,
-            "title": "Administrateur Systèmes et Réseaux",
+            "title": "Consultant Supply chain D365",
             "salary": "35k€/an",
             "duration": "CDI",
             "location": "Paris",
@@ -44,7 +44,7 @@
         },
         {
             "id": 3,
-            "title": "TAI",
+            "title": "Consultant Finance D365",
             "salary": "25k€/an",
             "duration": "CDI",
             "location": "Metz",
@@ -65,7 +65,7 @@
         },
         {
             "id": 4,
-            "title": "RSI",
+            "title": "Consultant fonctionnel - Chef de projet Dynamics CRM ",
             "salary": "55k€/an",
             "duration": "CDI",
             "location": "Strasbourg",
@@ -86,10 +86,10 @@
         },
         {
             "id": 5,
-            "title": "Administrateur Réseaux",
-            "salary": "39k€/an",
-            "duration": "CDD",
-            "location": "Lyon",
+            "title": "Consultant Business central",
+            "salary": "550/600€ Jr",
+            "duration": "12 mois",
+            "location": "Tahiti",
             "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
             "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
             "companyDescription": "Un acteur clé dans la gestion de services cloud.",
@@ -107,7 +107,7 @@
         },
         {
             "id": 6,
-            "title": "Développeur d'applications",
+            "title": "Développeur Dynamics 365 CE (CRM)",
             "salary": "75k€/an",
             "duration": "CDI",
             "location": "Londres",
@@ -128,7 +128,7 @@
         },
         {
             "id": 7,
-            "title": "Expert Office 365",
+            "title": "Consultant technique Business central",
             "salary": "45k€/an",
             "duration": "Freelance 3 mois",
             "location": "Luxembourg",
@@ -149,10 +149,31 @@
         },
         {
             "id": 8,
-            "title": "Expert Biztalk",
+            "title": "Directeur de projet Business central",
+            "salary": "70k€/an",
+            "duration": "CDI",
+            "location": "Marseille",
+            "description": "Migration vers office 365",
+            "tags": ["Office 365"],
+            "companyDescription": "Mairie",
+            "jobDescription": "lorem125",
+            "missions": [
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
+            ],
+            "profile": {
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
+                "languages": "Français et anglais."
+            }
+        },
+        {
+            "id": 8,
+            "title": "Directeur de projet Dynamics 365",
             "salary": "85k€/an",
-            "duration": "Freelance 3 mois",
-            "location": "Luxembourg",
+            "duration": "CDI",
+            "location": "Marseille",
             "description": "Migration vers office 365",
             "tags": ["Office 365"],
             "companyDescription": "Mairie",
@@ -170,23 +191,22 @@
         },
         {
             "id": 9,
-            "title": "Developpeur d'application C#",
-            "salary": "45k€/an",
-            "duration": "CDI",
-            "location": "Metz",
-            "description": "Renforcement de l'équipe de développement",
-            "tags": [".Net"],
-            "companyDescription": "Targeet",
-            "jobDescription": "Nous sommes à la recherche d'un développeur Junior afin de renforcer l'équipe de développement en place",
+            "title": "Expert C#",
+            "salary": "85k€/an",
+            "duration": "Freelance 3 mois",
+            "location": "Luxembourg",
+            "description": "Migration vers office 365",
+            "tags": ["Office 365"],
+            "companyDescription": "Mairie",
+            "jobDescription": "lorem125",
             "missions": [
-                "Maintenance CD/CI",
-                "Gestion du back-end",
-                "Développement de nouvelles fonctionnalités",
-                "Support et correction de bug"
+                "Gérer les serveurs et les équipements réseau.",
+                "Maintenir un haut niveau de disponibilité.",
+                "Garantir la sécurité des données."
             ],
             "profile": {
-                "experience": "Débutant accepté",
-                "skills": "C#, git, Visual Studio",
+                "experience": "2-5 ans dans l'administration système.",
+                "skills": "Bonne connaissance des outils réseau.",
                 "languages": "Français et anglais."
             }
         },

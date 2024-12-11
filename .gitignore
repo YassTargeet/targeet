@@ -1,8 +1,2 @@
 # Ignorer le dossier SASS
-sass/
-
-# Ignorer les fichiers de configuration du projet
-package.json
-
-# Ignorer le README.md
-README.md
+public/css/
