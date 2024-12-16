@@ -2,23 +2,26 @@
     "jobs": [
         {
             "id": 1,
-            "title": "Développeur .Net Core",
+            "title": "Tech lead .Net Core",
             "salary": "500/550€ Jr",
             "duration": "1 an",
             "location": "Bordeaux",
-            "description": "lorem120Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat hic magni voluptas quos qui iusto sunt ipsum rem accusantium eum? Repellendus, minus ea a corporis eos maxime mollitia est qui necessitatibus id et. Corrupti placeat qui cupiditate itaque voluptas perspiciatis eius vero laborum hic molestiae est consequuntur quam omnis fugit, et ipsa sequi modi laboriosam voluptatum officiis quod magni sapiente enim voluptate. Facere illo reiciendis fugit modi nobis eveniet? Ipsa voluptatum distinctio facere blanditiis inventore deleniti quibusdam sequi illo, ullam, a cumque ratione libero, ab dolorem eligendi id minima dignissimos saepe. Doloremque repellat ipsa quibusdam vel corporis porro veniam sit voluptatum reiciendis ex dicta consequatur incidunt, culpa vero molestiae soluta dolorum assumenda voluptate impedit! Qui dolore maiores facere cumque ducimus!",
+            "description": "Nous recherchons un(e) Lead Developer .NET Core expérimenté(e), pour intégrer l’équipe produit Connecteurs d’un client, dont la mission consiste à synchroniser les données de catalogue produit avec les Marketplaces clientes de celui ci et à gérer l’intégration des commandes dans notre SI.",
             "tags": [".Net"],
-            "companyDescription": "Une entreprise de renommée internationale dans le secteur des technologies.",
+            "companyDescription": "Une entreprise de renommée Française dans le secteur des technologies et Marketplace.",
             "jobDescription": "Concevoir et développer des solutions robustes et évolutives.",
             "missions": [
-                "Développer des fonctionnalités front-end et back-end.",
-                "Collaborer avec les équipes produit.",
-                "Participer aux revues de code."
+                "Garantir la stabilité, la performance, la robustesse et la scalabilité du code.",
+                "Définir une vision technique claire, valoriser les bénéfices d’une trajectoire cible et assurer sa mise en œuvre..",
+                "Participer à la conception et à l’élaboration de l’architecture du produit."
+                "Contribuer à l’estimation des charges de développement."
+                "Développer des fonctionnalités robustes et innovantes."
+
             ],
             "profile": {
-                "experience": "2-3 ans dans un poste similaire.",
-                "skills": "Maîtrise de JavaScript et .Net.",
-                "languages": "Anglais courant."
+                "experience": "8/10 ans dans un poste similaire.",
+                "skills": "Maîtrise de C# et .Net Core.",
+                "languages": "français"
             }
         },
         {
