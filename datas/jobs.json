@@ -13,8 +13,8 @@
             "missions": [
                 "Garantir la stabilité, la performance, la robustesse et la scalabilité du code.",
                 "Définir une vision technique claire, valoriser les bénéfices d’une trajectoire cible et assurer sa mise en œuvre..",
-                "Participer à la conception et à l’élaboration de l’architecture du produit."
-                "Contribuer à l’estimation des charges de développement."
+                "Participer à la conception et à l’élaboration de l’architecture du produit.",
+                "Contribuer à l’estimation des charges de développement.",
                 "Développer des fonctionnalités robustes et innovantes."
 
             ],
@@ -27,32 +27,32 @@
         {
             "id": 2,
             "title": "Consultant Supply chain D365",
-            "salary": "35k€/an",
+            "salary": "from 50k€/an",
             "duration": "CDI",
-            "location": "Paris",
-            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
-            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
-            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
+            "location": "Paris + remote",
+            "description": "Au sein du pôle Business Solutions, vous serez intégré(e) une équipe et interviendrez en fonction de votre domaine d'expertise sur des projets de mise en œuvre de Microsoft Dynamics 365 for Finance and Operations.",
+            "tags": ["Dynamics365"],
+            "companyDescription": "Un acteur clé dans l'intégration D365",
             "jobDescription": "Superviser les infrastructures réseau et systèmes.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Analyse et cadrage de besoins.",
+                "Animation d'atelier",
+                "Rédaction des livrables de conception"
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "4 ans sur des projets ERP D365.",
+                "skills": "Bonne connaissance de la supply D365.",
+                "languages": "Français."
             }
         },
         {
             "id": 3,
             "title": "Consultant Finance D365",
-            "salary": "25k€/an",
+            "salary": "50k€/an",
             "duration": "CDI",
-            "location": "Metz",
+            "location": "Paris et remote",
             "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
-            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
+            "tags": ["Dynamics365", "Finance", "FO", "ERP", "DynamicsAX"],
             "companyDescription": "Un acteur clé dans la gestion de services cloud.",
             "jobDescription": "Superviser les infrastructures réseau et systèmes.",
             "missions": [
@@ -93,60 +93,60 @@
             "salary": "550/600€ Jr",
             "duration": "12 mois",
             "location": "Tahiti",
-            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
-            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
-            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
-            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "description": "Prenez part à un projet de migration Onprem de Nav vers BC.",
+            "tags": ["Dyanmics365", "Business central", "NAV", "ERP", "Modules"],
+            "companyDescription": "Un acteur clé dans la gestion des stocks de l'île.",
+            "jobDescription": "Devenez le bras droit du directeur de projet ERP pendant 1 an.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Analyse et cadrage de besoins.",
+                "Formation des users.",
+                "Assistance à la mise en production."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "5 ans en environement ERP BC/Nav.",
+                "skills": "Projets de migration,formation, orateur, Power BI.",
+                "languages": "Français."
             }
         },
         {
             "id": 6,
             "title": "Développeur Dynamics 365 CE (CRM)",
-            "salary": "75k€/an",
+            "salary": "à partir de 40k€ à 55k€/an",
             "duration": "CDI",
-            "location": "Londres",
-            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
-            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
-            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
-            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "location": "Remote depuis la France",
+            "description": "Assurez le deploiement et customisation de Dynamics 365 .",
+            "tags": ["Dynamics365", "Dynamics CRM", "Javascript", "CustomerEngagement", "C#"],
+            "companyDescription": "Un acteur clé dans l'intégration Dynamics 365 CE.",
+            "jobDescription": "Réferent technique , tech lead ou developpeur confirmé.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Paramétrer et implémenter les modules.",
+                "Participer à l’analyse et au développement spécifique demandé.",
+                "Exécuter les opérations de livraisons et déploiements des solutions développées."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "minimum 3 ans dans le developpement de solution Dynamics 365 Cloud.",
+                "skills": "Bonne connaissance des outils Dynamics 365, Power Platform et Power BI.",
+                "languages": "Français."
             }
         },
         {
             "id": 7,
             "title": "Consultant technique Business central",
-            "salary": "45k€/an",
-            "duration": "Freelance 3 mois",
+            "salary": "55-60k€/an",
+            "duration": "CDI",
             "location": "Luxembourg",
-            "description": "Migration vers office 365",
-            "tags": ["Office 365"],
-            "companyDescription": "Mairie",
-            "jobDescription": "lorem125",
+            "description": "Participez à plusieurs projets de deploiement de Business central",
+            "tags": ["Dynamics365", "Business central", "ERP"],
+            "companyDescription": "Société leader et experte dans l'intégration D365 BC à Luxembourg ",
+            "jobDescription": "Consultant technique Dynamics 365 ",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Faciliter la gestion des données entre Microsoft Dynamics 365 et d'autres systèmes.",
+                "Fournir un support technique et une assistance aux utilisateurs finaux, en répondant aux demandes liées aux fonctionnalités de Microsoft Dynamics.",
+                "Déployer, surveiller et maintenir Dynamics 365, les modules complémentaires et les applications métier associées.."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
+                "experience": "3-5 ans en tant que developpeur Dynamics BC & NAV.",
+                "skills": "Développement AL & C/AL.",
                 "languages": "Français et anglais."
             }
         },
@@ -156,19 +156,19 @@
             "salary": "70k€/an",
             "duration": "CDI",
             "location": "Marseille",
-            "description": "Migration vers office 365",
-            "tags": ["Office 365"],
-            "companyDescription": "Mairie",
-            "jobDescription": "lorem125",
+            "description": "Rattaché(e) au responsable de service Consulting, vous serez le garant du bon déroulement des projets qui vous seront confiés autour des solutions de gestion Microsoft Dynamics NAV / Business Central.",
+            "tags": ["Dynamics365"],
+            "companyDescription": "Intégrateur international de solution D365 BC",
+            "jobDescription": "Directeur de projet ERP - D365 Business central",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Vous assurez l'interface entre le client et les intervenants.",
+                "Vous avez à cœur de garantir la qualité de production, dans le respect des engagements commerciaux et techniques en maintenant un climat de confiance avec les clients..",
+                "vous serez le garant du bon déroulement des projets qui vous seront confiés autour des solutions de gestion Microsoft Dynamics NAV / Business Central."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "Minimum 8 ans en tant que Chef de projet ERP ou Directeur de projet.",
+                "skills": "Bonne connaissance des ERP du marché, de préférence NAV/BC",
+                "languages": "Français."
             }
         },
         {
