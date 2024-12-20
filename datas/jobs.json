@@ -26,7 +26,7 @@
         },
         {
             "id": 2,
-            "title": "Consultant Supply chain D365",
+            "title": "Consultant Supply chain D365 FO",
             "salary": "from 50k€/an",
             "duration": "CDI",
             "location": "Paris + remote",
@@ -47,7 +47,7 @@
         },
         {
             "id": 3,
-            "title": "Consultant Finance D365",
+            "title": "Consultant Finance D365 FO",
             "salary": "50k€/an",
             "duration": "CDI",
             "location": "Paris et remote",
@@ -56,7 +56,7 @@
             "companyDescription": "Un acteur clé dans la gestion de services cloud.",
             "jobDescription": "Superviser les infrastructures réseau et systèmes.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
+                "Analyse et cadrage de besoins.",
                 "Maintenir un haut niveau de disponibilité.",
                 "Garantir la sécurité des données."
             ],
@@ -71,25 +71,25 @@
             "title": "Consultant fonctionnel - Chef de projet Dynamics CRM ",
             "salary": "55k€/an",
             "duration": "CDI",
-            "location": "Strasbourg",
-            "description": "Assurez la maintenance des systèmes pour une grande entreprise.",
-            "tags": ["Linux", "Windows Server", "Virtualisation", "Réseaux", "Sécurité"],
-            "companyDescription": "Un acteur clé dans la gestion de services cloud.",
-            "jobDescription": "Superviser les infrastructures réseau et systèmes.",
+            "location": "Remote & Paris",
+            "description": "Assurez la gestion de projet et la supervision des projets CRM.",
+            "tags": ["CRM", "Dynamics365", "DynamicsCRM", "CustomerEngagement", "PowerBI"],
+            "companyDescription": "Un acteur clé dans l'intégration Dynamics 365 CE.",
+            "jobDescription": "Devenez le bras droit du directeur du CTO.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Analyse et cadrage de besoins.",
+                "Avant vente",
+                "Garantir la sécurité des données et la bonne communication avec les clients."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "5 ans dans l'administration de projet CRM Dynamics.",
+                "skills": "Bonne connaissance de l'outil Dynamics 365 CE.",
+                "languages": "Français."
             }
         },
         {
             "id": 5,
-            "title": "Consultant Business central",
+            "title": "Consultant Dynamics 365 Business central",
             "salary": "550/600€ Jr",
             "duration": "12 mois",
             "location": "Tahiti",
@@ -173,88 +173,88 @@
         },
         {
             "id": 8,
-            "title": "Directeur de projet Dynamics 365",
-            "salary": "85k€/an",
+            "title": "Consultant Fonctionnel Dynamics 365 CE",
+            "salary": "50k€/an",
             "duration": "CDI",
-            "location": "Marseille",
-            "description": "Migration vers office 365",
-            "tags": ["Office 365"],
-            "companyDescription": "Mairie",
-            "jobDescription": "lorem125",
+            "location": "Strasbourg & Paris",
+            "description": "Deploiement de solution D365 (CRM)",
+            "tags": ["Dyanmics365"],
+            "companyDescription": "Intégrateur international de solution D365 CE",
+            "jobDescription": "Vous serez affecté à un projet soit en région parisienne soit dans toute la France et serez le référent Dynamics CE/CRM de votre périmètre fonctionnel.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Aider au développement de la practice Dynamics France.",
+                "Participer aux phases d'avant vente de nos futurs projets.",
+                "Répondre aux besoins clients en mode projet dans des contextes innovants."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "5 ans dans le deploiement de solution CRM Dynamics.",
+                "skills": "Bonne connaissance des outils Power BI & Power Platform.",
+                "languages": "Français"
             }
         },
         {
             "id": 9,
-            "title": "Expert C#",
-            "salary": "85k€/an",
-            "duration": "Freelance 3 mois",
-            "location": "Luxembourg",
-            "description": "Migration vers office 365",
-            "tags": ["Office 365"],
-            "companyDescription": "Mairie",
-            "jobDescription": "lorem125",
+            "title": "Développeur .Net",
+            "salary": "400€/Jr",
+            "duration": "Freelance 12 mois",
+            "location": "Bordeaux",
+            "description": "développement de services en .Net Core ",
+            "tags": [".Net"],
+            "companyDescription": "Market place",
+            "jobDescription": "Vous intègrerez l'équipe en charge de la définition de la meilleure offre (prix, vendeur) ainsi que la définition de ce qu'est une offre de qualité.",
             "missions": [
-                "Gérer les serveurs et les équipements réseau.",
-                "Maintenir un haut niveau de disponibilité.",
-                "Garantir la sécurité des données."
+                "Développer, tester et maintenir les composants techniques associés aux produits de l'équipe .",
+                "Concevoir des architectures performantes et de qualité pour répondre aux besoins d'évolution du produit .",
+                "Participer à la garantie de la stabilité, la performance et l'évolutivité de votre périmètre."
             ],
             "profile": {
-                "experience": "2-5 ans dans l'administration système.",
-                "skills": "Bonne connaissance des outils réseau.",
-                "languages": "Français et anglais."
+                "experience": "5 ans dans l'administration .Net Core",
+                "skills": ".Net Core, Mango DB, Kafka, Web API",
+                "languages": "Français."
             }
         },
         {
             "id": 10,
-            "title": "Developpeur d'application .Net Azure",
+            "title": "Consultant Technico-fonctionnel Dynamics 365 CRM ",
             "salary": "45k€/an",
             "duration": "CDI",
-            "location": "Metz",
+            "location": "Strasbourg",
             "description": "Renforcement de l'équipe de développement",
             "tags": [".Net"],
-            "companyDescription": "Targeet",
-            "jobDescription": "Nous sommes à la recherche d'un développeur Junior afin de renforcer l'équipe de développement en place",
+            "companyDescription": "Intégrer une entreprise en pleine croissance qui valorise l'expertise, le dynamisme et l'apprentissage continu au cœur de l’écosystème Microsoft (Dynamics 365 CRM, Power Platform, M365, Azure) !",
+            "jobDescription": "Nous sommes à la recherche d'un consultant technico fonctionnel afin de renforcer l'équipe en place",
             "missions": [
-                "Maintenance CD/CI",
-                "Gestion du back-end",
-                "Développement de nouvelles fonctionnalités",
-                "Support et correction de bug"
+                "Développer et mettre en œuvre des projets, en gérant des budgets, des ressources tout en assurant le respect des délais.",
+                "Paramétrer et personnaliser l'application pour répondre aux documents de spécifications ",
+                "Développer en C# ou en Javascript dans le Framework Dynamics CRM ",
+                "Transférer des compétences nécessaires à l’utilisation de la solution"
             ],
             "profile": {
-                "experience": "Débutant accepté",
-                "skills": "C#, git, Visual Studio",
-                "languages": "Français et anglais."
+                "experience": "5 ans minimum",
+                "skills": "C#, JavaScript, bases de données relationnelles, SQL",
+                "languages": "Français"
             }
         },
         {
             "id": 11,
-            "title": "Consultant technique D365 CE",
+            "title": "Sales Specialist CRM – Microsoft Dynamics",
             "salary": "45k€/an",
             "duration": "CDI",
-            "location": "Metz",
-            "description": "Renforcement de l'équipe de développement",
-            "tags": [".Net"],
-            "companyDescription": "Targeet",
-            "jobDescription": "Nous sommes à la recherche d'un développeur Junior afin de renforcer l'équipe de développement en place",
+            "location": "Paris 75",
+            "description": "Renforcement de l'équipe Sales",
+            "tags": ["Dynamics365"],
+            "companyDescription": "Intégrateur international de solution D365 CE",
+            "jobDescription": "le Sales Specialist aura comme mission d’accompagner le développement commercial du pôle CRM",
             "missions": [
-                "Maintenance CD/CI",
-                "Gestion du back-end",
-                "Développement de nouvelles fonctionnalités",
-                "Support et correction de bug"
+                "Traiter de nouvelles opportunités commerciales, générées par notre réseau ",
+                "Travailler en étroite collaboration avec les clients en tant que conseiller de confiance afin de qualifier au mieux leurs besoins",
+                "Orienter les clients vers la solution la plus adaptés à leurs attentes en démontrant la valeur de nos solutions à travers des démonstrations personnalisées",
+                "Animer la relation avec Microsoft sur les comptes de son portefeuille"
             ],
             "profile": {
-                "experience": "Débutant accepté",
-                "skills": "C#, git, Visual Studio",
-                "languages": "Français et anglais."
+                "experience": "Minimum une expérience en tant que Sales D365",
+                "skills": "Dynamics CRM, sens de la communication développé et une bonne capacité à convaincre.",
+                "languages": "Français."
             }
         }
     ]
