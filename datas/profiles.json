@@ -2,13 +2,58 @@
     "profile": [
         {
             "id": "1",
-            "codeName": "DevNinja21",
+            "codeName": "ExpertD365MA",
             "mainTechnologies": [".Net", "Dynamics365", "Power Platform"],
-            "speciality": "Développement logiciel",
+            "speciality": "Expert technique Dynamics 365 CRM",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "Projet 1",
+                    "company": "FBD",
+                    "missions": [
+                        "Réalisation de l’architecture technique de la solution (Model Driven App + Sharepoint + Power Automate).",
+                        "Conception  et  conseil  technico-fonctionnel  autour  des  solutions  Microsoft  Dynamics, Sharepoint,.",
+                        "Réalisation de rapports Power BI connectés à l’application."
+                    ]
+                },
+                {
+                    "years": "Projet 2",
+                    "company": "Orange",
+                    "missions": [
+                        "Ateliers de cadrage et de conception de la solution cible.",
+                        "Dématérialisation et refonte du processus de commande.",
+                        "Mise en place de PowerApps Portal connecté à une application Model Driven et Sharepoint."
+                    ]
+                },
+                {
+                    "years": "Projet 3",
+                    "company": "Sogetrel",
+                    "missions": [
+                        "Mise en place de l’architecture de flux et règles de gestion.",
+                        "Réalisation de l’interface en se basant sur Power Platform.",
+                        "Réalisation de rapports Power BI."
+                    ]
+                },
+                {
+                    "years": "Projet 4",
+                    "company": "HEC",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "Projet 5",
+                    "company": "Nexity",
+                    "missions": [
+                        "Développement et maintenance d'applications.",
+                        "Conception de nouvelles fonctionnalités.",
+                        "Collaboration avec l'équipe pour optimiser l'expérience utilisateur."
+                    ]
+                },
+                {
+                    "years": "Projet 6",
+                    "company": "Vallourec",
                     "missions": [
                         "Développement et maintenance d'applications.",
                         "Conception de nouvelles fonctionnalités.",
@@ -16,8 +61,8 @@
                     ]
                 },
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "Projet 7",
+                    "company": "LVMH",
                     "missions": [
                         "Développement et maintenance d'applications.",
                         "Conception de nouvelles fonctionnalités.",
@@ -25,53 +70,8 @@
                     ]
                 },
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
-                    "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
-                    ]
-                },
-                {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
-                    "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
-                    ]
-                },
-                {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
-                    "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
-                    ]
-                },
-                {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
-                    "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
-                    ]
-                },
-                {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
-                    "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
-                    ]
-                },
-                {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "Projet 8",
+                    "company": "Crédit Agricole",
                     "missions": [
                         "Gestion de projets techniques.",
                         "Coordination d'équipes pluridisciplinaires.",
@@ -80,10 +80,10 @@
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement : C#, HTML, CSS, JavaScript",
+                "Certifications : ITIL,Sales,D365 Online deployment, Customer Service",
+                "Outils : ClickDimensions, Power Platform",
+                "Gestion de bases de données : MySQL"
             ],
             "softSkills": [
                 "Gestion de projet",
@@ -95,114 +95,114 @@
         {
             "id": "2",
             "codeName": "DevNinja22",
-            "mainTechnologies": ["Office365", "PowerBi"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Dynamics365", "PowerBi"],
+            "speciality": "Directeur projet & Manager Microsoft D365",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2024",
+                    "company": "Prodware",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Direction commerciale Microsoft SMB couvrant 2 domaines Business Apps.",
+                        "Développement du biz dev des partenaires (Microsoft et partenaires Infra/cyber).",
+                        "Stratégie d’offres et d’organisation Microsoft D365 ERP (Fin&Ops et Business Central) et D365 Customer Engagement et PowerPlatform."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2022-2023",
+                    "company": "TNP",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Practice Lead Microsoft (Customer Engagement, PowerPlatform, F&P).",
+                        "Création du pôle Microsoft avec un delivery Model.",
+                        "Gestion du partenariat Microsoft et Pilotage du business dev avec les équipes commerciales."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement web : non applicable",
+                "Backend : non applicable",
+                "Frameworks : non applicable",
+                "Gestion de bases de données : non applicable"
             ],
             "softSkills": [
-                "Gestion de projet",
+                "Direction de projet",
                 "Communication efficace",
                 "Résolution de problèmes",
-                "Esprit d'équipe"
+                "Gestion d'équipe"
             ]
         },
         {
             "id": "3",
             "codeName": "DevNinja23",
-            "mainTechnologies": [".Net", "Biztalk", "Power Platform"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": [".Net", "C#", "Azure"],
+            "speciality": "Consultant Senior C# .Net ",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2022-2023",
+                    "company": "Leetchi",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Création des Azure Functions(ServiceBusTrigger, HttpTrigger, TimerTrigger.)",
+                        "BFF .Net dédiée à une SPA Vue.js pour le site internet.",
+                        "Automatisation de tests fonctionnels front (et API) avec Cypress/Javascript"
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2021-2022",
+                    "company": "Domoti",
                     "missions": [
                         "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Dev back end des APIs.",
+                        "Refonte de site et dev Algolia Search."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
+                "Développement : C#, XML, Javascript, VB.net",
+                "Cloud : Azure, Google, Kubernetes",
                 "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Gestion de bases de données : SQLServer, MongoDB, SSRS, Postgre"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
-                "Résolution de problèmes",
+                "Gestion de projet multi secteur",
+                "Communication ",
+                "Leader",
                 "Esprit d'équipe"
             ]
         },
         {
             "id": "4",
             "codeName": "DevNinja24",
-            "mainTechnologies": ["Biztalk", "Dynamics365", "Office365"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Azure", ".Net", "DevOps"],
+            "speciality": "Développeur .Net Architecte",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2023-today",
+                    "company": "Banque Postale",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Audit des pratiques Agiles / Sécurité.",
+                        "Atelier de sensibilisation à la sécurité IT.",
+                        "Mise en place d’outils dans la CI/CD sur Gitlab (Sonar, Trivy)."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2022-2023",
+                    "company": "EBP",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Présentation Clean Code / bonnes pratiques de code.",
+                        "Mise en place d’ateliers sur l’utilisation de Docker.",
+                        "Suivi de la mise en place de l’architecture micro-services (Angular/PHP/Blazorr) via CQRS/DDD."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
+                "Développement : .Net, C#, JavaScript",
+                "Cloud : Azure, RabbitMQ",
                 "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Gestion de bases de données : SQLServer, MongoDB"
             ],
             "softSkills": [
-                "Gestion de projet",
+                "Conseils sur les pratiques Agiles",
                 "Communication efficace",
-                "Résolution de problèmes",
+                "Encadrement technique ",
                 "Esprit d'équipe"
             ]
         },
@@ -210,36 +210,36 @@
             "id": "5",
             "codeName": "DevNinja25",
             "mainTechnologies": [".Net", "Dynamics365", "Power Platform", "Biztalk", "Office365"],
-            "speciality": "Développement logiciel",
+            "speciality": "Consultant technique Dynamics 365",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2018-2024",
+                    "company": "KEOLIS",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Déploiement POC D365 online.",
+                        "Pilotage TMA : Corrections, évolutions, intégrations de flux Batch & WS.",
+                        "Proxy PO technique."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2016-2018",
+                    "company": "Identicar",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Rédaction des spécifications techniques.",
+                        "Ateliers techniques internes ou transverses.",
+                        "Benchmark et développement d’une extension Js dédiée à la visualisation des baux."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement : C#, .Net, JavaScript",
+                "Logiciel : Dynamics 2016 & 365",
+                "Frameworks : Jquery",
+                "Autres : MySQL, SSIS, SSRS, O365"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
+                "SCRUM",
+                "DevOps",
                 "Résolution de problèmes",
                 "Esprit d'équipe"
             ]
@@ -247,33 +247,33 @@
         {
             "id": "6",
             "codeName": "DevNinja26",
-            "mainTechnologies": [".Net", "Power Platform", "PowerBi"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Dynamics365", "Power Platform", "PowerBi"],
+            "speciality": "Consultante Dynamics 365 CE",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "Depuis juillet 2023",
+                    "company": "Confidentiel",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Préparation et animation des ateliers de conception.",
+                        "Rédaction des spécifications fonctionnelles.",
+                        "Recette interne et accompagnement de la recette métier."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2019-2023",
+                    "company": "BNP RE",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Préparation et animation des ateliers de conception.",
+                        "Validation des spécifications fonctionnelles.",
+                        "Recette interne et accompagnement de la recette métier."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement web : non applicable",
+                "Backend : non applicable",
+                "Outils: Dynamics365, Docusign, DevOps, PowerPlatform",
+                "Gestion de projet : Jira, Scrum, Agile"
             ],
             "softSkills": [
                 "Gestion de projet",
@@ -285,77 +285,77 @@
         {
             "id": "7",
             "codeName": "DevNinja21",
-            "mainTechnologies": [".Net", "Dynamics365", "Power Platform"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Dynamics365", "Power Platform"],
+            "speciality": "Consultant Supply Dynamics 365",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2021-ongoing",
+                    "company": "Client final",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Rédaction détaillée des besoins.",
+                        "Définition des règles de gestion.",
+                        "Suivi du développement des évolutions/corrections de l’intégrateur."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2018-2020",
+                    "company": "Client final",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Management de l’équipe des Key Users du domaine Production / MRP.",
+                        "Etablissement des processus cibles et besoins spécifique avec les consultants fonctionnels auprès des Key Users.",
+                        "Paramétrage de la solution avec les consultants fonctionnels."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement  : ASP.NET, C#, Unibasic",
+                "SGBD : VB6, Access",
+                "ERP : D365 & AX",
+                "Gestion de bases de données : SQL, Oracle"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
+                "Gestion de présta",
+                "Communication limpide",
                 "Résolution de problèmes",
-                "Esprit d'équipe"
+                "Autonomie"
             ]
         },
         {
             "id": "9",
             "codeName": "DevNinja29",
-            "mainTechnologies": [".Net", "Power Platform"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Office365", "Power Platform"],
+            "speciality": "Expert Microsoft 365 / Expert Power Plateform ",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "Depuis 2023",
+                    "company": "SAS *****RD ",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Leader technique : Activités.",
+                        "Annuaire d’entreprise et Sécurité.",
+                        "Formation et support aux utilisateurs."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2022-2023",
+                    "company": "Safran DS",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Développement PowerShell.",
+                        "Support aux utilisateurs.",
+                        "Leader technique."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement : C#, Q#, SQL, PowerShell 5.1, JavaScript, Typescript",
+                "Frameworks : .Net, Api rest, Razor, Mvc",
+                "Outils : PowerPlatform, Sharepoint, Dynamics365, Teams",
+                "Gestion de bases de données : SQLServer, Oracle"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
-                "Résolution de problèmes",
-                "Esprit d'équipe"
+                "Pédagogue",
+                "Conduite du changement",
+                "Analayste",
+                "Management"
             ]
         },
         {
