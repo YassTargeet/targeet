@@ -361,59 +361,59 @@
         {
             "id": "10",
             "codeName": "DevNinja210",
-            "mainTechnologies": ["Office365", "Dynamics365", "Power Platform", "PowerBi"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Azure", "PowerBi"],
+            "speciality": "Consultant BI : AZURE - SYNAPSE - POWER BI - MSBI",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2022-now",
+                    "company": "Unéo",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Définition des solutions et les choix techniques à mettre en œuvre.",
+                        "Développements Power BI (rapports métiers + rapports techniques).",
+                        "Création des API pour exposer de la Data."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2021-2022",
+                    "company": "Engie",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Définition des modes d'ingestions à mettre en place pour chaque source de données.",
+                        "Optimisation des patterns d'intégration et de stockage des données.",
+                        "Amélioration continue et maintien de la plateforme : suivi des run et optimisations des traitements."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
+                "Développement : C#, Python",
+                "MS BI : (SSIS, SSAS, SSRS), Power BI, SQL, DAX, MDX",
+                "Azure : Data Factory, Function",
                 "Gestion de bases de données : MySQL, MongoDB"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
+                "Expertise métier",
+                "Communication fluide",
                 "Résolution de problèmes",
-                "Esprit d'équipe"
+                "Passioné"
             ]
         },
         {
             "id": "11",
             "codeName": "DevNinja211",
-            "mainTechnologies": ["Dynamics365", "Power Platform", "Office365"],
-            "speciality": "Développement logiciel",
+            "mainTechnologies": ["Dynamics365", "Power Platform"],
+            "speciality": "Consultant Business central technico fonctionnel",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2019-2024",
+                    "company": "Intégrateur Business central",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "planification, gestion d'équipe,support, encadrement d'alternant, Chefferie de projet.",
+                        "vente, achat, production,logistique, service, EAI.",
+                        "Analyse et conception de solution,Analyse et conception d'interfaces, Dynamics Nav (CAL), XML,UML."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2016-2019",
+                    "company": "Intégrateur Business central",
                     "missions": [
                         "Gestion de projets techniques.",
                         "Coordination d'équipes pluridisciplinaires.",
@@ -422,92 +422,91 @@
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement : AL, C/AL, JavaScript",
+                "Versions ERP : NAV 5 à BC 14",
+                "Gestion de bases de données : SQL"
             ],
             "softSkills": [
                 "Gestion de projet",
-                "Communication efficace",
-                "Résolution de problèmes",
+                "Analayse",
+                "Curieux",
                 "Esprit d'équipe"
             ]
         },
         {
             "id": "12",
             "codeName": "ExpBiz-1",
-            "mainTechnologies": ["Biztalk"],
-            "speciality": "Spécialiste Biztalk",
+            "mainTechnologies": ["Dynamics365"],
+            "speciality": "Consultant Finance D365 FO",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "depuis 2023",
+                    "company": "Intégrateur Dynamics FO",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Collecte et analyses des besoins métiers.",
+                        "Rédaction des spécifications fonctionnelles détaillées et suivi des développements.",
+                        "CParamétrage de la solution pour répondre aux besoins clients."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2021-2023",
+                    "company": "End User",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Recueil et analyse des besoins des équipes métiers..",
+                        "Etude de l’existant et définition du model cible.",
+                        "Réalisation des études de cadrage, la documentation des processus."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Méthodes agiles : Certifié Professional Scrum Product Owner PSPO I, Scrum.org",
+                "D365 : Certifié Dynamics 365 Finance Functional consultant associate",
+                "FFormations : Master 2 - Programme Grande Ecole - Finance",
+                "Finance : Certifié Acteur professionnel des marchés financiers par l’AMF"
             ],
             "softSkills": [
-                "Gestion de projet",
-                "Communication efficace",
-                "Résolution de problèmes",
+                "Force de proposition",
+                "Excellent relationnel",
+                "Sens du service",
                 "Esprit d'équipe"
             ]
         },
         {
             "id": "13",
             "codeName": "ExpBiz-2",
-            "mainTechnologies": ["Biztalk",".Net"],
-            "speciality": "Spécialiste Biztalk",
+            "mainTechnologies": ["Dynamics365"],
+            "speciality": "CONSULTANTE FONCTIONNELLE/ CHEF DE PROJET NAVISION BC365",
             "experience": [
                 {
-                    "years": "2021-2023",
-                    "company": "Nom de l'entreprise",
+                    "years": "2021-2024",
+                    "company": "Intégrateur Dynamics 365 BC",
                     "missions": [
-                        "Développement et maintenance d'applications.",
-                        "Conception de nouvelles fonctionnalités.",
-                        "Collaboration avec l'équipe produit pour optimiser l'expérience utilisateur."
+                        "Support et assistance auprès des clients sur les différentes versions de NAV, Business Central.",
+                        "Gestion des évolutions applicatives fonctionnelles dans le respect du Core Model.",
+                        "Rédaction des spécifications fonctionnelles."
                     ]
                 },
                 {
-                    "years": "2018-2021",
-                    "company": "Nom de l'entreprise",
+                    "years": "2019-2021",
+                    "company": "End User",
                     "missions": [
-                        "Gestion de projets techniques.",
-                        "Coordination d'équipes pluridisciplinaires.",
-                        "Mise en place de solutions adaptées aux besoins clients."
+                        "Analyser les demandes des utilisateurs et gérer les incidents.",
+                        "Assister et dépanner les utilisateurs sur l’outil NAVISION.",
+                        "Réaliser le setup de la solution sur les domaines fonctionnels achat / vente / logistique / finance."
                     ]
                 }
             ],
             "technicalSkills": [
-                "Développement web : HTML, CSS, JavaScript",
-                "Backend : Node.js, PHP",
-                "Frameworks : React, Angular",
-                "Gestion de bases de données : MySQL, MongoDB"
+                "Développement : XML, HTML, SQL",
+                "ERP : Business central, Nav, SAP",
+                "Langues : Anglais, Arabe",
+                "SGBD : Microsoft SQL Server 2008->2016, Oracle Database, MySQL, Oracle SQL"
             ],
             "softSkills": [
                 "Gestion de projet",
                 "Communication efficace",
-                "Résolution de problèmes",
-                "Esprit d'équipe"
+                "Curieuse",
+                "Flexible"
             ]
         }
     ]
