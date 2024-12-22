@@ -94,7 +94,7 @@
         },
         {
             "id": "2",
-            "codeName": "DevNinja22",
+            "codeName": "Directeur de Projet D365 CRM",
             "mainTechnologies": ["Dynamics365", "PowerBi"],
             "speciality": "Directeur projet & Manager Microsoft D365",
             "experience": [
@@ -132,7 +132,7 @@
         },
         {
             "id": "3",
-            "codeName": "DevNinja23",
+            "codeName": "Dev C# .Net",
             "mainTechnologies": [".Net", "C#", "Azure"],
             "speciality": "Consultant Senior C# .Net ",
             "experience": [
@@ -170,7 +170,7 @@
         },
         {
             "id": "4",
-            "codeName": "DevNinja24",
+            "codeName": "Dev .Net Achitecte",
             "mainTechnologies": ["Azure", ".Net", "DevOps"],
             "speciality": "Développeur .Net Architecte",
             "experience": [
@@ -208,7 +208,7 @@
         },
         {
             "id": "5",
-            "codeName": "DevNinja25",
+            "codeName": "Technique D365 CRM",
             "mainTechnologies": [".Net", "Dynamics365", "Power Platform", "Biztalk", "Office365"],
             "speciality": "Consultant technique Dynamics 365",
             "experience": [
@@ -246,7 +246,7 @@
         },
         {
             "id": "6",
-            "codeName": "DevNinja26",
+            "codeName": "Consultante D365 CRM",
             "mainTechnologies": ["Dynamics365", "Power Platform", "PowerBi"],
             "speciality": "Consultante Dynamics 365 CE",
             "experience": [
@@ -284,7 +284,7 @@
         },
         {
             "id": "7",
-            "codeName": "DevNinja21",
+            "codeName": "Consultant Supply AX/D365",
             "mainTechnologies": ["Dynamics365", "Power Platform"],
             "speciality": "Consultant Supply Dynamics 365",
             "experience": [
@@ -322,7 +322,7 @@
         },
         {
             "id": "9",
-            "codeName": "DevNinja29",
+            "codeName": "Expert Power Platform O365",
             "mainTechnologies": ["Office365", "Power Platform"],
             "speciality": "Expert Microsoft 365 / Expert Power Plateform ",
             "experience": [
@@ -360,7 +360,7 @@
         },
         {
             "id": "10",
-            "codeName": "DevNinja210",
+            "codeName": "Consultant PowerBI",
             "mainTechnologies": ["Azure", "PowerBi"],
             "speciality": "Consultant BI : AZURE - SYNAPSE - POWER BI - MSBI",
             "experience": [
@@ -398,7 +398,7 @@
         },
         {
             "id": "11",
-            "codeName": "DevNinja211",
+            "codeName": "Senior Business central",
             "mainTechnologies": ["Dynamics365", "Power Platform"],
             "speciality": "Consultant Business central technico fonctionnel",
             "experience": [
@@ -435,7 +435,7 @@
         },
         {
             "id": "12",
-            "codeName": "ExpBiz-1",
+            "codeName": "Consultant Finance Dynamics 365 FO",
             "mainTechnologies": ["Dynamics365"],
             "speciality": "Consultant Finance D365 FO",
             "experience": [
@@ -473,7 +473,7 @@
         },
         {
             "id": "13",
-            "codeName": "ExpBiz-2",
+            "codeName": "Chef de projet Business central",
             "mainTechnologies": ["Dynamics365"],
             "speciality": "CONSULTANTE FONCTIONNELLE/ CHEF DE PROJET NAVISION BC365",
             "experience": [
